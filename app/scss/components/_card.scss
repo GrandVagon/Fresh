@@ -1,0 +1,260 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	padding: 12px 18px 18px;
+	background-color: #ffffff;
+	border: 1px solid rgba(17, 17, 17, 0.2);
+	box-sizing: border-box;
+	border-radius: 6px;
+	transition: border 0.4s;
+
+	&:hover {
+		border: 1px solid $secondary;
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__stocks {
+		height: 38px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+
+	&__stock {
+		display: inline-block;
+		padding: 3px 6px;
+		font-weight: 700;
+		font-size: 10px;
+		line-height: 1;
+		color: $primary;
+		text-transform: uppercase;
+		border-radius: 6px;
+
+		&:nth-child(odd) {
+			margin-bottom: 6px;
+		}
+
+		&:nth-child(n + 3) {
+			margin-left: 6px;
+		}
+
+		&--new {
+			background-color: $secondary;
+		}
+
+		&--hit {
+			background-color: $accent-orange;
+		}
+
+		&--disc30,
+		&--disc50 {
+			background-color: $accent-red;
+		}
+	}
+
+	&__img {
+		object-fit: contain;
+		margin-bottom: 12px;
+	}
+
+	&__title {
+		min-height: 60px;
+		margin-bottom: 12px;
+	}
+
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	&__price {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: flex-start;
+	}
+
+	&__price-old {
+		margin-bottom: 3px;
+		position: relative;
+		line-height: 1;
+		color: $primary-600;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 7px;
+			left: 0;
+			width: 45px;
+			height: 1px;
+			background-color: $primary-600;
+			transform: rotateZ(-10deg);
+		}
+	}
+
+	&__price-new {
+		line-height: 1;
+	}
+
+	&__quantity {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: auto 0 auto 80px;
+		width: 84px;
+		height: 24px;
+		font-family: inherit;
+		font-weight: 600;
+		font-size: 16px;
+	}
+
+	&__label {
+		width: 100%;
+	}
+
+	&__quantity-input {
+		width: 36px;
+		height: 24px;
+		font-weight: 600;
+		font-size: 16px;
+		text-align: center;
+		background-color: rgba(99, 166, 14, 0.102);
+	}
+
+	&__plus-btn,
+	&__minus-btn {
+		display: inline-block;
+		position: relative;
+		width: 24px;
+		height: 24px;
+		background-color: $secondary;
+		background-position: center center;
+		transition: background-color 0.4s;
+
+		&:hover {
+			background-color: #4d810c;
+		}
+	}
+
+	&__plus-btn {
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 4px;
+			left: 4px;
+			width: 16px;
+			height: 16px;
+			background-image: url('../images/icons/plus.svg');
+		}
+	}
+
+	&__minus-btn {
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 4px;
+			left: 4px;
+			width: 16px;
+			height: 16px;
+			background-image: url('../images/icons/minus.svg');
+		}
+	}
+
+	&--light {
+		display: flex;
+		flex-direction: row;
+		padding: 14px 11px;
+		background-color: $primary;
+
+		.card__stocks {
+			position: absolute;
+		}
+
+		.card__img {
+			margin-bottom: 0;
+			margin-right: 12px;
+			object-fit: cover;
+		}
+
+		.card__title {
+			margin-bottom: 6px;
+		}
+
+		.card__bottom {
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+		}
+
+		.card__price {
+			flex-direction: row-reverse;
+			align-items: center;
+		}
+
+		.card__price-old {
+			margin-bottom: 0;
+			font-size: 12px;
+
+			.card__currency {
+				font-size: 12px;
+			}
+
+			&::after {
+				width: 28px;
+			}
+		}
+
+		.card__price-new {
+			margin-right: 12px;
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 1%;
+			color: #505050;
+
+			.card__currency {
+				font-size: 12px;
+			}
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	&__indication {
+		margin-bottom: 6px;
+		font-weight: 600;
+		font-size: 10px;
+		line-height: 1;
+		text-transform: uppercase;
+		text-align: left;
+
+		&--yes {
+			color: $secondary;
+		}
+
+		&--min {
+			color: $accent-red;
+		}
+
+		&--no {
+			color: $primary-600;
+		}
+	}
+
+}

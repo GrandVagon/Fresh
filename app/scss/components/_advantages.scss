@@ -1,0 +1,40 @@
+.advantages {
+    background-color: $primary-100;
+    padding: 48px 0;
+
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        margin-right: 45px;
+        padding-left: 74px;
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: 50px;
+    }
+
+    &__item:last-child {
+        padding-right: 30px;
+    }
+
+    &__descr {
+        margin-bottom: 12px;
+        font-weight: 700;
+        font-size: 16px;
+        color: #121212;
+    }
+
+    &__item--delivery {
+        background-image: url('../images/icons/delivery.svg');
+    }
+
+    &__item--return {
+        background-image: url('../images/icons/return.svg');
+    }
+
+    &__item--support {
+        background-image: url('../images/icons/support.svg');
+    }
+}

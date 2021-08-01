@@ -1,0 +1,12 @@
+.star {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    &__num {
+        margin-right: 3px;
+        font-weight: 700;
+        font-size: inherit;
+        color: $dark-500;
+    }
+}

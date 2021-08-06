@@ -64,7 +64,7 @@
 
 	&__bottom {
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
 		align-items: center;
 		padding: 25px 0;
 	}
@@ -72,10 +72,7 @@
 	&__copy {
 		font: inherit;
 		color: $primary;
-	}
-
-	&__payment {
-		display: flex;
+		margin-right: auto;
 	}
 
 	&__pay:not(:first-child) {
@@ -84,16 +81,15 @@
 
 	&__pay {
 		background-repeat: no-repeat;
+		height: 30px;
 
 		&--visa {
 			width: 93px;
-			height: 30px;
 			background-image: url('../images/icons/visa.svg');
 		}
 
 		&--master {
 			width: 50px;
-			height: 30px;
 			background-image: url('../images/icons/mastercard.svg');
 		}
 	}

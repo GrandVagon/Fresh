@@ -36,13 +36,6 @@ body {
 	color: $dark-900;
 }
 
-.card__title {
-	font-family: inherit;
-	font-weight: 600;
-	color: $dark-900;
-	text-align: left;
-}
-
 .main {
 	flex-grow: 1;
 }
@@ -56,6 +49,17 @@ body {
 	background-color: $secondary;
 	border-radius: 6px;
 	transition: all 0.4s;
+
+	&--subscribe {
+		padding: 12px;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 1.16;
+		text-transform: uppercase;
+		border-radius: 0;
+		border-top-right-radius: 6px;
+		border-bottom-right-radius: 6px;
+	}
 
 	&:hover {
 		background-color: #4d810c;
@@ -100,7 +104,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	border-radius: 3px;
-	transition: background 0.3s;
+	transition: all 0.4s;
 
 	&:hover {
 		background-color: rgba(255, 255, 255, 0.1);
@@ -115,31 +119,6 @@ body {
 	}
 }
 
-.user-btn {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	width: 50px;
-	height: 50px;
-	background-image: url('../images/icons/user-icon.svg');
-	background-repeat: no-repeat;
-	background-position: center;
-	border-radius: 3px;
-	transition: background 0.3s;
-
-	&:hover {
-		background-color: rgba(255, 255, 255, 0.1);
-	}
-
-	&:active {
-		background-color: rgba(255, 255, 255, 0.4);
-	}
-
-	&:focus {
-		box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.5);
-	}
-}
 
 .favorites-btn {
 	display: flex;
@@ -152,7 +131,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	border-radius: 3px;
-	transition: background 0.3s;
+	transition: all 0.4s;
 
 	&:hover {
 		background-color: rgba(255, 255, 255, 0.1);
@@ -170,9 +149,6 @@ body {
 		width: 32px;
 		height: 32px;
 		background-image: url('../images/icons/heart-grey.svg');
-		background-repeat: no-repeat;
-		background-position: right top;
-		transition: background-image 0.4s;
 
 		&:hover {
 			background-image: url('../images/icons/heart-yellow.svg');
@@ -191,7 +167,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	border-radius: 3px;
-	transition: background 0.3s;
+	transition: all 0.4s;
 
 	&:hover {
 		background-color: rgba(255, 255, 255, 0.1);
@@ -206,26 +182,11 @@ body {
 	}
 
 	&--accent {
-		display: block;
-		position: relative;
+
 		width: 32px;
 		height: 32px;
 		background-color: $secondary;
-		border-radius: 3px;
-		transition: all 0.4s;
-
-		&::before {
-			content: '';
-			position: absolute;
-			left: 48%;
-			top: 50%;
-			transform: translate(-50%, -50%);
-			width: 17px;
-			height: 17px;
-			background-image: url('../images/icons/cart-icon.svg');
-			background-repeat: no-repeat;
-			background-size: contain;
-		}
+		background-size: 17px;
 
 		&:hover {
 			background-color: #4d800c;

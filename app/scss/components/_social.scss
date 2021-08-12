@@ -32,4 +32,27 @@
     &__link--instagram {
         background-image: url('../images/social-icons/instagram.svg');
     }
+
+    &--dark {
+
+        .social {
+
+            &__link--facebook {
+                background-image: url('../../images/social-icons/facebook-dark.svg');
+            }
+
+            &__link--youtube {
+                background-image: url('../../images/social-icons/youtube-dark.svg');
+            }
+
+            &__link--telegram {
+                background-image: url('../../images/social-icons/telegram-dark.svg');
+            }
+
+            &__link--instagram {
+                background-image: url('../../images/social-icons/instagram-dark.svg');
+            }
+
+        }
+    }
 }

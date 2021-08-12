@@ -12,12 +12,15 @@
 @import 'components/blog';
 @import 'components/footer';
 
+@import 'components/buttons';
+@import 'components/side-menu';
 @import 'components/search';
 @import 'components/subscribe';
 @import 'components/filter';
 @import 'components/card';
 @import 'components/star';
 @import 'components/social';
+@import 'components/basket';
 
 
 .tops__card,
@@ -33,4 +36,60 @@
 
 .promo__title {
 	margin-bottom: 32px;
+}
+
+.contacts {
+	font-style: normal;
+	font: inherit;
+	color: $primary;
+
+	&__phone {
+		display: block;
+		margin-bottom: 18px;
+	}
+
+	&--dark {
+		padding: 24px 21px 24px 30px;
+		font-style: normal;
+		font-size: 18px;
+		line-height: 1;
+		letter-spacing: 0.03em;
+		text-transform: capitalize;
+		color: $dark-800;
+		border-top: 1px solid $primary-600;
+		border-bottom: 1px solid $primary-600;
+
+		.contacts {
+
+			&__phone,
+			&__text {
+				position: relative;
+				padding-left: 40px;
+
+				&::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 24px;
+					height: 32px;
+				}
+
+				&--tel::before {
+					background-image: url('../images/icons/tel-icon-dark.svg');
+					background-repeat: no-repeat;
+				}
+
+				&--mark::before {
+					background-image: url('../images/icons/mark.svg');
+					background-repeat: no-repeat;
+				}
+			}
+
+
+		}
+	}
+
+
+
 }

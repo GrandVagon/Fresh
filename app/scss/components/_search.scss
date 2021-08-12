@@ -2,6 +2,7 @@
   max-width: 576px;
   width: 100%;
   display: flex;
+  margin-right: 10px;
 
   &__label {
     width: 100%;
@@ -11,7 +12,7 @@
     display: block;
     position: relative;
     width: 100%;
-    padding: 17px 15px 17px 52px;
+    padding: 16px 15px 16px 52px;
     background-color: $primary;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -37,7 +38,7 @@
   }
 
   &__btn {
-    padding: 17px 55px;
+    padding: 16px 55px;
     color: $primary;
     text-transform: uppercase;
     background-color: $dark-800;
@@ -58,4 +59,44 @@
       box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.5);
     }
   }
+}
+
+@media (max-width: 992px) {
+
+  .search-form {
+    &__btn {
+      padding: 16px 25px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .search-form {
+    position: absolute;
+    bottom: -48px;
+    left: 0;
+    max-width: 100%;
+    transform: translateY(0);
+    overflow: hidden;
+    height: 0;
+
+    &__input {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 1px solid $dark-800;
+      border-right: none;
+      border-radius: 0;
+    }
+
+    &__btn {
+      border-radius: 0;
+    }
+
+    &_active {
+      overflow: visible;
+      height: auto;
+    }
+  }
+
 }

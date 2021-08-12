@@ -2,6 +2,7 @@
 	position: relative;
 	padding-top: 34px;
 	background-color: $dark-800;
+	z-index: 0;
 
 	&::before {
 		content: '';

@@ -95,7 +95,7 @@
   }
 
   &__logo {
-    margin-right: 25px;
+    max-width: initial;
 
     &--small {
       display: none;
@@ -137,8 +137,9 @@
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
-    height: 20px;
+    height: 22px;
     z-index: 2;
+    margin-left: 5px;
 
     &:before {
       content: "";
@@ -225,7 +226,7 @@
 
       &::before {
         top: -10px;
-        left: -20px;
+        left: -2px;
       }
     }
 
@@ -235,7 +236,7 @@
 
       &::before {
         top: -10px;
-        left: 12px;
+        left: 21px;
       }
     }
 
@@ -258,18 +259,24 @@
 
   .header {
 
-    &__link--addr {
-      &::before {
-        left: 2px;
-      }
-    }
 
     &__logo-img {
-      margin-right: 12px;
+      margin-right: 26px;
     }
 
-    &__user-btn {
-      margin-right: 5px;
+    &__user-num {
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+  .header {
+
+    &__logo-img {
+      margin-right: 8px;
     }
   }
 }

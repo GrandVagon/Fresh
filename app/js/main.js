@@ -52,7 +52,16 @@ $(function () {
         nextArrow: '<button type="button" class="slick-next"><img src="./images/icons/arrows-right.svg" alt="arrow-right"></button>',
         speed: 500,
         fade: true,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        responsive: [
+            {
+              breakpoint: 1600,
+              settings: {
+                arrows: false,
+                dots: true
+              }
+            }
+          ]
     });
 
 
@@ -60,9 +69,25 @@ $(function () {
         dots: false,
         arrows: false,
         slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        slidesToScroll: 3,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 3,
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            }
+          },
+        ]
     });
 
 

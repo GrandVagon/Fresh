@@ -71,6 +71,10 @@
 		font-weight: 600;
 		color: $dark-900;
 		text-align: left;
+
+		&--short {
+			display: none;
+		}
 	}
 
 	&__bottom {
@@ -113,7 +117,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin: auto 0 auto 80px;
+		margin: auto;
+		margin-right: 24px;
 		width: 84px;
 		height: 24px;
 		font-family: inherit;
@@ -182,7 +187,7 @@
 	&--light {
 		display: flex;
 		flex-direction: row;
-		padding: 14px 11px;
+		padding: 12px;
 		background-color: $primary;
 
 		.card {
@@ -212,9 +217,6 @@
 
 			}
 
-			&__title {
-				margin-bottom: 6px;
-			}
 
 			&__bottom {
 				align-items: center;
@@ -335,25 +337,61 @@
 	}
 }
 
+@media (max-width: 992px) {
+
+	.card {
+		padding: 12px;
+
+		&__quantity {
+			margin-right: 6px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+
+	.tops__card .card__quantity {
+		display: none;
+	}
+
+}
+
+
 @media (max-width: 576px) {
+	.tops .card__img {
+		height: 126px;
+	}
 
-	.card--basket {
-		align-items: flex-start;
-		flex-wrap: wrap;
+	.card {
 
-		.card {
-			&__img {
-				margin-right: 32px;
-				margin-bottom: 18px;
-			}
+		.card__title--long {
+			display: none;
+		}
 
-			&__box {
-				min-width: 100%;
-			}
+		.card__title--short {
+			display: block;
+		}
 
-			&__price-total {
-				margin-left: auto;
+		&--basket {
+			align-items: flex-start;
+			flex-wrap: wrap;
+
+			.card {
+				&__img {
+					margin-right: 32px;
+					margin-bottom: 18px;
+				}
+
+				&__box {
+					min-width: 100%;
+				}
+
+				&__price-total {
+					margin-left: auto;
+				}
+
 			}
 		}
 	}
+
 }

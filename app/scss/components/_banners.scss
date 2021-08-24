@@ -1,5 +1,8 @@
 .banners {
 	padding-bottom: 72px;
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: cover;
 
 	&__wrapper {
 		display: grid;
@@ -26,6 +29,7 @@
 		&--light {
 			grid-column: span 2;
 			color: $primary;
+			text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
 
 			.banners__link {
 				border-bottom: 2px solid $primary;
@@ -36,12 +40,13 @@
 	&__subtitle {
 		margin-bottom: 18px;
 		font-weight: 700;
+		font-size: 12px;
 		line-height: 1;
 		letter-spacing: 0.1em;
 	}
 
 	&__title {
-		max-width: 70%;
+		max-width: 80%;
 		margin-bottom: 12px;
 		font-family: 'Signika', sans-serif;
 		font-weight: 600;
@@ -49,7 +54,7 @@
 	}
 
 	&__link {
-		display: inline;
+		display: inline-block;
 		padding-bottom: 8px;
 		font-weight: 70;
 		line-height: 1;
@@ -60,5 +65,59 @@
 		&:hover {
 			opacity: 0.5;
 		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.banners {
+
+		&__item {
+			padding: 15px;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+
+	.banners {
+
+		&__wrapper {
+			grid-template-columns: 1fr 1fr;
+			grid-row-gap: 25px;
+		}
+
+	}
+}
+
+@media (max-width: 576px) {
+
+	.banners {
+		padding-bottom: 48px;
+
+		&__wrapper {
+			grid-template-columns: 1fr;
+		}
+
+		&__subtitle {
+			margin-top: auto;
+		}
+
+		&__title {
+			max-width: 60%;
+			font-size: 24px;
+			margin-bottom: auto;
+		}
+
+		&__item--light {
+			grid-column: span 1;
+
+			.banners__title {
+				max-width: 80%;
+			}
+		}
+
+		// &__link {
+		// 	margin-top: auto;
+		// }
 	}
 }

@@ -598,38 +598,41 @@
 
 							<img class="card__img" src="images/products/juice.jpg" alt="Напиток сокосодержащий"
 								height="224" />
-							<h4 class="card__title">
+							<h4 class="card__title card__title--long">
 								Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин
-								безалкогольный...
+								безалкогольный...</h4>
 
-								<div class="card__bottom">
-									<div class="card__price">
-										<div class="card__price-old">
-											299
-											<span class="card__currency">&#8381;</span>
-										</div>
-										<div class="card__price-new">
-											199
-											<span class="card__currency">&#8381;</span>
-										</div>
-									</div>
+							<h4 class="card__title card__title--short">
+								Напиток сокосодержащий Sanpellegrino...</h4>
 
-									<div class="card__quantity">
-										<button class="card__minus-btn" type="button" name="button">
-											<span class="sr-only">убрать единицу товара</span>
-										</button>
-										<label>
-											<span class="sr-only">Поле ввода количества товара</span>
-											<input class="card__quantity-input" type="text" name="name" value="1" />
-										</label>
-										<button class="card__plus-btn" type="button" name="button">
-											<span class="sr-only">добавить единицу товара</span>
-										</button>
+							<div class="card__bottom">
+								<div class="card__price">
+									<div class="card__price-old">
+										299
+										<span class="card__currency">&#8381;</span>
 									</div>
-									<button class="basket-btn basket-btn--accent" type="button">
-										<span class="sr-only">добавить товар в корзину</span>
+									<div class="card__price-new">
+										199
+										<span class="card__currency">&#8381;</span>
+									</div>
+								</div>
+
+								<div class="card__quantity">
+									<button class="card__minus-btn" type="button" name="button">
+										<span class="sr-only">убрать единицу товара</span>
+									</button>
+									<label>
+										<span class="sr-only">Поле ввода количества товара</span>
+										<input class="card__quantity-input" type="text" name="name" value="1" />
+									</label>
+									<button class="card__plus-btn" type="button" name="button">
+										<span class="sr-only">добавить единицу товара</span>
 									</button>
 								</div>
+								<button class="basket-btn basket-btn--accent" type="button">
+									<span class="sr-only">добавить товар в корзину</span>
+								</button>
+							</div>
 						</article>
 
 						<article class="card mix category-c">
@@ -694,7 +697,12 @@
 
 							<img class="card__img" src="images/products/ketchup.jpg" alt="Кетчуп томатный"
 								height="224" />
-							<h4 class="card__title">Кетчуп томатный детский органический Bio-Zentrale 500мл</h4>
+							<h4 class="card__title card__title--long">
+								Кетчуп томатный детский органический Bio-Zentrale 500мл
+							</h4>
+							<h4 class="card__title card__title--short">
+								Кетчуп томатный детский органический...
+							</h4>
 
 							<div class="card__bottom">
 								<div class="card__price">
@@ -1157,7 +1165,7 @@
 			</div>
 		</section>
 
-		<div class="brands">
+		<div class="brands section">
 			<div class="container">
 
 				<ul class="brands__list">
@@ -1324,38 +1332,77 @@
 					</form>
 				</div>
 
-				<ul class="footer__list">
-					<li class="footer__item">
-						<a class="footer__link" href="#"> О нас </a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__link" href="#"> Контакты </a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__link" href="#"> Публичная оферта </a>
-					</li>
-				</ul>
+				<nav class="footer__menu">
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a class="footer__link" href="#"> О нас </a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#"> Контакты </a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#"> Публичная оферта </a>
+						</li>
 
-				<ul class="footer__list">
-					<li class="footer__item">
-						<a class="footer__link" href="#"> Оплата и доставка </a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__link" href="#"> Вакансии </a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__link" href="#"> Акции </a>
-					</li>
-				</ul>
+					</ul>
 
-				<ul class="footer__list">
-					<li class="footer__item">
-						<a class="footer__link" href="#"> Отзывы </a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__link" href="#"> Новости </a>
-					</li>
-				</ul>
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a class="footer__link" href="#"> Оплата и доставка </a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#"> Вакансии </a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#"> Акции </a>
+						</li>
+					</ul>
+
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a class="footer__link" href="#"> Отзывы </a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#"> Новости </a>
+						</li>
+					</ul>
+				</nav>
+
+
+				<nav class="footer__menu footer__menu--mobile">
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a class="footer__link" href="#"> О нас </a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#"> Контакты </a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#"> Публичная оферта </a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#"> Оплата и доставка </a>
+						</li>
+					</ul>
+
+					<ul class="footer__list">
+
+						<li class="footer__item">
+							<a class="footer__link" href="#"> Вакансии </a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#"> Акции </a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#"> Отзывы </a>
+						</li>
+						<li class="footer__item">
+							<a class="footer__link" href="#"> Новости </a>
+						</li>
+					</ul>
+
+				</nav>
+
 				<address class="contacts">
 					<a class="contacts__phone" href="phone:+7907288365">Горячая линия +7 907 288 365</a>
 					<p class="contacts__text">Санкт-Петербург, ул. Ленина, 1</p>
@@ -1387,12 +1434,14 @@
 
 			<div class="footer__bottom">
 				<p class="footer__copy">© 2021 Фрешок</p>
-				<a class="footer__pay footer__pay--visa" href="#">
-					<span class="sr-only">Перейти на сайт Visa</span>
-				</a>
-				<a class="footer__pay footer__pay--master" href="#">
-					<span class="sr-only">Перейти на сайт Mastercard</span>
-				</a>
+				<div class="footer__pay-inner">
+					<a class="footer__pay footer__pay--visa" href="#">
+						<span class="sr-only">Перейти на сайт Visa</span>
+					</a>
+					<a class="footer__pay footer__pay--master" href="#">
+						<span class="sr-only">Перейти на сайт Mastercard</span>
+					</a>
+				</div>
 			</div>
 		</div>
 		</div>

@@ -39,13 +39,6 @@ body {
 	color: $dark-900;
 }
 
-.main,
-.footer {
-	display: none;
-	// flex: 1 1 auto;
-}
-
-
 .sr-only {
 	position: absolute;
 	width: 1px;
@@ -60,9 +53,16 @@ body {
 }
 
 
+@media (max-width: 768px) {
+	.title {
+		font-size: 24px;
+		margin-bottom: 24px;
+	}
+}
+
 @media (max-width: 576px) {
 
-	.container {
-		padding: 0 10px;
+	.section {
+		padding: 48px 0;
 	}
 }

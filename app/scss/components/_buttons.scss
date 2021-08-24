@@ -439,7 +439,7 @@
         display: flex;
     }
 
-    .favorites-btn {
+    .header__user-btn.favorites-btn {
         display: none;
     }
 
@@ -447,6 +447,12 @@
         width: 40px;
         height: 40px;
         background-size: 24px;
+
+        &--accent {
+            width: 32px;
+            height: 32px;
+            background-size: 17px;
+        }
     }
 
     .btn {
@@ -454,9 +460,7 @@
             padding: 12px 0;
         }
     }
-
 }
-
 
 @media (max-width: 576px) {
 
@@ -476,21 +480,21 @@
         }
     }
 
-    // .search-btn {
-    //     display: flex;
-    //     width: 32px;
-    //     height: 32px;
-    //     background-size: 20px;
-    // }
-
     .favorites-btn {
-        display: none;
+        &--light {
+            width: 24px;
+            height: 24px;
+            background-size: contain;
+        }
     }
 
-    // .basket-btn {
-    //     width: 32px;
-    //     height: 32px;
-    //     background-size: 24px;
-    // }
+    .btn {
+        font-size: 14px;
+
+        &--light {
+            font-size: 18px;
+        }
+
+    }
 
 }

@@ -1,10 +1,10 @@
 .product-filter {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 45px;
+	margin: 0 auto 45px;
 
-	&__item:not(:last-child) {
-		margin-right: 24px;
+	&__item:not(:first-child) {
+		margin-left: 24px;
 	}
 
 	&__btn {
@@ -16,5 +16,22 @@
 
 	&__btn.mixitup-control-active {
 		border-bottom: 3px solid $secondary-200;
+	}
+}
+
+@media (max-width: 576px) {
+	.product-filter {
+		flex-wrap: wrap;
+		margin-bottom: 12px;
+		padding: 6px 2px;
+
+		&__item {
+			margin-bottom: 12px;
+		}
+
+		&__item:nth-child(4) {
+			margin: 0;
+		}
+
 	}
 }

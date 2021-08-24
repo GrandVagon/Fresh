@@ -96,5 +96,35 @@
         text-transform: uppercase;
     }
 
+}
 
+@media(max-width: 992px) {
+
+    .blog__items {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 25px;
+
+    }
+}
+
+@media(max-width: 576px) {
+    .blog {
+
+        .title {
+            margin-bottom: 12px;
+        }
+
+        &__top {
+            flex-direction: column;
+            margin-bottom: 24px;
+        }
+
+        &__items {
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            margin: 0 auto;
+        }
+    }
 }

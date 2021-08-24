@@ -26,7 +26,9 @@
 	}
 
 	&__subscribe {
-		width: 410px;
+		max-width: 300px;
+		width: 100%;
+		margin-right: 10px;
 	}
 
 	&__subscribe-text {
@@ -34,8 +36,18 @@
 		color: $primary;
 	}
 
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+		max-width: 470px;
+		width: 100%;
+
+		&--mobile {
+			display: none;
+		}
+	}
+
 	&__list {
-		min-width: 160px;
 		font: inherit;
 		color: $primary;
 	}
@@ -74,6 +86,11 @@
 		font: inherit;
 		color: $primary;
 		margin-right: auto;
+		text-transform: uppercase;
+	}
+
+	&__pay-inner {
+		display: flex;
 	}
 
 	&__pay:not(:first-child) {
@@ -93,5 +110,108 @@
 			width: 50px;
 			background-image: url('../images/icons/mastercard.svg');
 		}
+	}
+}
+
+@media(max-width: 992px) {
+
+	.footer {
+
+		&__inner {
+			flex-wrap: wrap;
+			margin-bottom: 0;
+		}
+
+		&__menu {
+			order: 2;
+			margin: 0 auto;
+			padding: 24px 0;
+		}
+	}
+
+}
+
+@media(max-width: 568px) {
+
+	.footer {
+
+		&::before {
+			bottom: 120px;
+		}
+
+		.container {
+			padding: 0;
+		}
+
+		.social {
+			margin: 18px auto 0;
+		}
+
+		.logo__img {
+			margin: 0 auto;
+		}
+
+		&__inner {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&__subscribe {
+			margin: 0;
+			padding: 24px 0;
+			order: 3;
+		}
+
+		&__menu {
+			position: relative;
+			display: none;
+			margin: 0;
+
+			&--mobile {
+				display: flex;
+				justify-content: center;
+				max-width: 100%;
+
+				.footer__list:first-child {
+					margin-right: 57px;
+				}
+			}
+
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background-color: rgba(255, 255, 255, 0.1);
+			}
+
+			&::before {
+				bottom: 0;
+			}
+
+			&::after {
+				top: 0;
+			}
+		}
+
+		&__bottom {
+			flex-direction: column;
+			padding: 24px 0;
+			text-align: center;
+		}
+
+		&__copy {
+			order: 3;
+			margin: 0;
+			text-align: center;
+		}
+
+		&__pay-inner {
+			margin-bottom: 24px;
+		}
+
 	}
 }

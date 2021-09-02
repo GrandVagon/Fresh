@@ -4,147 +4,29 @@
 @import 'vars';
 @import 'global';
 
-@import 'components/header';
-@import 'components/intro';
-@import 'components/advantages';
-@import 'components/banners';
-@import 'components/brands';
-@import 'components/blog';
-@import 'components/footer';
+@import 'components/section/header';
+@import 'components/section/intro';
+@import 'components/section/advantages';
+@import 'components/section/banners';
+@import 'components/section/brands';
+@import 'components/section/blog';
+@import 'components/section/footer';
 
-@import 'components/buttons';
-@import 'components/side-menu';
-@import 'components/search';
-@import 'components/subscribe';
-@import 'components/filter';
-@import 'components/card';
-@import 'components/star';
-@import 'components/social';
-@import 'components/basket';
+@import 'components/element/card';
+@import 'components/element/basket';
+@import 'components/element/side-menu';
+@import 'components/element/contacts';
+@import 'components/element/star';
 
+@import 'components/interactive/search';
+@import 'components/interactive/product-filter';
+@import 'components/interactive/subscribe';
+@import 'components/interactive/social';
 
-.tops__card,
-.promo__card {
-	display: grid;
-	grid-template-rows: 1fr;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-auto-rows: auto;
-	grid-row-gap: 25px;
-	grid-column-gap: 25px;
-	margin-bottom: 48px;
-}
-
-.promo {
-	background-color: #F5F5F5;
-
-	&_title {
-		margin-bottom: 32px;
-	}
-}
-
-
-.contacts {
-
-	margin-left: 10px;
-	font-style: normal;
-	font: inherit;
-	color: $primary;
-
-	&__phone {
-		display: block;
-		margin-bottom: 18px;
-	}
-
-	&--dark {
-		padding: 24px 21px 24px 30px;
-		font-style: normal;
-		font-size: 18px;
-		line-height: 1;
-		letter-spacing: 0.03em;
-		text-transform: capitalize;
-		color: $dark-800;
-		border-top: 1px solid $primary-600;
-		border-bottom: 1px solid $primary-600;
-
-		.contacts {
-
-			&__phone,
-			&__text {
-				position: relative;
-				padding-left: 40px;
-
-				&::before {
-					content: '';
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 24px;
-					height: 32px;
-				}
-
-				&--tel::before {
-					background-image: url('../images/icons/tel-icon-dark.svg');
-					background-repeat: no-repeat;
-				}
-
-				&--mark::before {
-					background-image: url('../images/icons/mark.svg');
-					background-repeat: no-repeat;
-				}
-			}
-
-
-		}
-	}
-
-}
-
-
-@media (max-width: 1200px) {
-
-	.tops__card,
-	.promo__card {
-		grid-template-columns: repeat(3, 1fr);
-		grid-row-gap: 15px;
-		grid-column-gap: 15px;
-
-	}
-
-	.contacts {
-		margin-left: auto;
-	}
-}
-
-@media (max-width: 768px) {
-
-	.tops__card,
-	.promo__card {
-		grid-template-columns: repeat(2, 1fr);
-		margin-bottom: 24px;
-	}
-}
-
-@media (max-width: 576px) {
-
-	.tops__card {
-		grid-row-gap: 6px;
-		grid-column-gap: 6px;
-	}
-
-	.promo {
-
-		&__card {
-			grid-template-columns: 1fr;
-			margin-bottom: 24px;
-		}
-
-		.btn {
-			font-size: 18px;
-		}
-	}
-
-	.contacts {
-		margin: 0;
-		padding: 24px 0;
-	}
-}
+@import 'components/buttons/menu-btn';
+@import 'components/buttons/btn';
+@import 'components/buttons/user-btn';
+@import 'components/buttons/favorites-btn';
+@import 'components/buttons/search-btn';
+@import 'components/buttons/basket-btn';
+@import 'components/buttons/close-btn';

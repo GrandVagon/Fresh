@@ -2,7 +2,8 @@ $(function () {
 
 	const link = $('button[data-basket="true"]'),
         basket = $('.basket'),
-		overlay = $('.overlay'),		
+		overlay = $('.overlay'),
+    fixedBody = $('body'),		
 		closeBasket = $('button[data-close="true"]');
 
     const openMenu= $('button[data-menu="open"]'),
@@ -10,39 +11,45 @@ $(function () {
           closeMenu=$('button[data-menu="close"]');
 
           openMenu.on('click', function () {
-            sideMenu.toggleClass('side_active');
+            sideMenu.toggleClass('active');
+            fixedBody.toggleClass('active');
         });
 
           closeMenu.on('click', function () {
-            sideMenu.toggleClass('side_active');
+            sideMenu.toggleClass('active');
+            fixedBody.toggleClass('active');
         });
           
 
 	link.on('click', function () {
 		overlay.show();
-		basket.toggleClass('basket_active');
+		basket.toggleClass('active');
+    fixedBody.toggleClass('active');
 	});
-        closeBasket.on('click',function () {
-		overlay.hide();
-		basket.toggleClass('basket_active');
+
+    closeBasket.on('click',function () {
+      overlay.hide();
+      basket.toggleClass('active');
+      fixedBody.toggleClass('active');
 	});
 
 	overlay.on('click',function () {
 		overlay.hide();
-		basket.toggleClass('basket_active');
+		basket.toggleClass('active');
+    fixedBody.toggleClass('active');
 	});
 
 
     $('.search-btn').on('click', function() {
-        $('.search-form').toggleClass('search-form_active');
+        $('.search-form').toggleClass('active');
     })
 
     $('button[data-menu="true"]').on('click', function() {
-        $('.menu-btn__list').toggleClass('menu-btn__list-active');
+        $('.menu-btn__list').toggleClass('active');
     });
 
     $('button[data-menu="side"]').on('click', function() {
-        $('button[data-menu="side"] .menu-btn__list').toggleClass('menu-btn__list-active');
+        $('button[data-menu="side"] .menu-btn__list').toggleClass('active');
     });
 
 
@@ -70,8 +77,8 @@ $(function () {
         arrows: false,
         slidesToShow: 6,
         slidesToScroll: 3,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 2000,
         responsive: [
           {
             breakpoint: 992,

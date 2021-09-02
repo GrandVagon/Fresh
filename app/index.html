@@ -32,6 +32,7 @@
 						<a class="header__link header__link--addr" href="#">Адрес и время доставки</a>
 					</li>
 					<li class="header__item header__item--phone">
+
 						<a class="header__link header__link--tel" href="tel:8002001010">Горячая линия 24/7</a>
 					</li>
 					<li class="header__item header__item--right">
@@ -125,87 +126,14 @@
 
 				</button>
 
-				<!-- <ul class="menu-btn" href=aria-label="каталог товаров">
-					<li>
-						<a href="#">
-							Каталог продуктов
-						</a>
-					</li>
-
-					<li>
-						<ul class="menu-btn__list">
-							<li class="menu-btn__item">
-								<a class="menu-btn__link" href="#">
-									Овощи и фрукты
-								</a>
-							</li>
-							<li class="menu-btn__item">
-								<a class="menu-btn__link" href="#">
-									Бакалея
-								</a>
-							</li>
-							<li class="menu-btn__item">
-								<a class="menu-btn__link" href="#">
-									Молочные продукты
-								</a>
-							</li>
-							<li class="menu-btn__item">
-								<a class="menu-btn__link" href="#">
-									Хлеб
-								</a>
-							</li>
-							<li class="menu-btn__item">
-								<a class="menu-btn__link" href="#">
-									Мясо
-								</a>
-							</li>
-							<li class="menu-btn__item">
-								<a class="menu-btn__link" href="#">
-									Колбаса
-								</a>
-							</li>
-							<li class="menu-btn__item">
-								<a class="menu-btn__link" href="#">
-									Рыба
-								</a>
-							</li>
-							<li class="menu-btn__item">
-								<a class="menu-btn__link" href="#">
-									Алкоголь
-								</a>
-							</li>
-							<li class="menu-btn__item">
-								<a class="menu-btn__link" href="#">
-									Напитки
-								</a>
-							</li>
-							<li class="menu-btn__item">
-								<a class="menu-btn__link" href="#">
-									Торты
-								</a>
-							</li>
-							<li class="menu-btn__item">
-								<a class="menu-btn__link" href="#">
-									Мясо
-								</a>
-							</li>
-							<li class="menu-btn__item">
-								<a class="menu-btn__link" href="#">
-									Чай, кофе
-								</a>
-							</li>
-						</ul>
-					</li>
-
-				</ul> -->
-
-
 
 				<form class="search-form" action="#">
 					<label class="search-form__label">
 						<span class="sr-only">Поиск товара</span>
 						<input class="search-form__input" type="search" name="search" placeholder="Найти в магазине ..."
-							aria-label="поле для ввода названия товара" required /></label>
+							aria-label="поле для ввода названия товара" required />
+
+					</label>
 					<button class="search-form__btn" type="button" aria-label="найти выбранный продукт">
 						Поиск
 					</button>
@@ -218,13 +146,22 @@
 					</button>
 					<button class="header__user-btn user-btn" type="button">
 						<span class="sr-only">вход в ваш персональный аккаунт</span>
+						<svg class="user-btn__img">
+							<use xlink:href="images/svg.svg#user-icon"></use>
+						</svg>
 					</button>
-					<button class="header__user-btn favorites-btn" type="button">
+					<button class="header__user-btn favorites-btn favorites-btn--light" type="button">
 						<span class="sr-only">понравившиеся товары</span>
+						<svg class="favorites-btn__img">
+							<use xlink:href="images/svg.svg#heart-icon"></use>
+						</svg>
 						<span class="header__user-num">12</span>
 					</button>
-					<button class="header__user-btn basket-btn" type="button" data-basket="true">
+					<button class="header__user-btn basket-btn basket-btn--light" type="button" data-basket="true">
 						<span class="sr-only">Открыть корзину</span>
+						<svg class="basket-btn__img">
+							<use xlink:href="images/svg.svg#cart-icon"></use>
+						</svg>
 						<span class="header__user-num">12</span>
 					</button>
 				</div>
@@ -352,15 +289,17 @@
 						<h3 class="sr-only">Список топовых товаров</h3>
 
 						<article class="card mix category-a">
+
 							<div class="card__top">
 								<div class="card__stocks">
 									<a class="card__stock card__stock--new" href="#">Новинка</a>
-									<!-- <a class="card__stock card__stock--hit" href="#">Хит</a>
-                                <a class="card__stock card__stock--disc30" href="#">-30%</a> -->
-									<a class="card__stock card__stock--disc50" href="#">-50%</a>
+									<a class="card__stock card__stock--disc" href="#">-50%</a>
 								</div>
-								<button class="favorites-btn favorites-btn--light" type="button">
+								<button class="favorites-btn" type="button">
 									<span class="sr-only">добавить в избранное</span>
+									<svg class="favorites-btn__img">
+										<use xlink:href="images/svg.svg#heart-icon"></use>
+									</svg>
 								</button>
 							</div>
 
@@ -391,8 +330,11 @@
 										<span class="sr-only">добавить единицу товара</span>
 									</button>
 								</div>
-								<button class="basket-btn basket-btn--accent" type="button">
+								<button class="basket-btn" type="button">
 									<span class="sr-only">добавить товар в корзину</span>
+									<svg class="basket-btn__img">
+										<use xlink:href="images/svg.svg#cart-icon"></use>
+									</svg>
 								</button>
 							</div>
 						</article>
@@ -400,13 +342,12 @@
 						<article class="card mix category-a">
 							<div class="card__top">
 								<div class="card__stocks">
-									<!-- <a class="card__stock card__stock--new" href="#">Новинка</a>
-									<a class="card__stock card__stock--hit" href="#">Хит</a>
-                                <a class="card__stock card__stock--disc30" href="#">-30%</a>
-									<a class="card__stock card__stock--disc50" href="#">-50%</a> -->
 								</div>
-								<button class="favorites-btn favorites-btn--light" type="button">
+								<button class="favorites-btn" type="button">
 									<span class="sr-only">добавить в избранное</span>
+									<svg class="favorites-btn__img">
+										<use xlink:href="images/svg.svg#heart-icon"></use>
+									</svg>
 								</button>
 							</div>
 
@@ -415,10 +356,6 @@
 
 							<div class="card__bottom">
 								<div class="card__price">
-									<!-- <div class="card__price-old">
-										1999
-										<span class="card__currency">&#8381;</span>
-									</div> -->
 									<div class="card__price-new">
 										199
 										<span class="card__currency">&#8381;</span>
@@ -437,8 +374,11 @@
 										<span class="sr-only">добавить единицу товара</span>
 									</button>
 								</div>
-								<button class="basket-btn basket-btn--accent" type="button">
+								<button class="basket-btn" type="button">
 									<span class="sr-only">добавить товар в корзину</span>
+									<svg class="basket-btn__img">
+										<use xlink:href="images/svg.svg#cart-icon"></use>
+									</svg>
 								</button>
 							</div>
 						</article>
@@ -446,13 +386,13 @@
 						<article class="card mix category-a">
 							<div class="card__top">
 								<div class="card__stocks">
-									<!-- <a class="card__stock card__stock--new" href="#">Новинка</a> -->
 									<a class="card__stock card__stock--hit" href="#">Хит</a>
-									<!-- <a class="card__stock card__stock--disc30" href="#">-30%</a> -->
-									<!-- <a class="card__stock card__stock--disc50" href="#">-50%</a> -->
 								</div>
-								<button class="favorites-btn favorites-btn--light" type="button">
+								<button class="favorites-btn" type="button">
 									<span class="sr-only">добавить в избранное</span>
+									<svg class="favorites-btn__img">
+										<use xlink:href="images/svg.svg#heart-icon"></use>
+									</svg>
 								</button>
 							</div>
 
@@ -461,10 +401,6 @@
 
 							<div class="card__bottom">
 								<div class="card__price">
-									<!-- <div class="card__price-old">
-										1999
-										<span class="card__currency">&#8381;</span>
-									</div> -->
 									<div class="card__price-new">
 										1019
 										<span class="card__currency">&#8381;</span>
@@ -483,8 +419,11 @@
 										<span class="sr-only">добавить единицу товара</span>
 									</button>
 								</div>
-								<button class="basket-btn basket-btn--accent" type="button">
+								<button class="basket-btn" type="button">
 									<span class="sr-only">добавить товар в корзину</span>
+									<svg class="basket-btn__img">
+										<use xlink:href="images/svg.svg#cart-icon"></use>
+									</svg>
 								</button>
 							</div>
 						</article>
@@ -493,12 +432,12 @@
 							<div class="card__top">
 								<div class="card__stocks">
 									<a class="card__stock card__stock--new" href="#">Новинка</a>
-									<!-- <a class="card__stock card__stock--hit" href="#">Хит</a>
-                                <a class="card__stock card__stock--disc30" href="#">-30%</a> -->
-									<!-- <a class="card__stock card__stock--disc50" href="#">-50%</a> -->
 								</div>
-								<button class="favorites-btn favorites-btn--light" type="button">
+								<button class="favorites-btn" type="button">
 									<span class="sr-only">добавить в избранное</span>
+									<svg class="favorites-btn__img">
+										<use xlink:href="images/svg.svg#heart-icon"></use>
+									</svg>
 								</button>
 							</div>
 
@@ -508,10 +447,6 @@
 
 							<div class="card__bottom">
 								<div class="card__price">
-									<!-- <div class="card__price-old">
-										1999
-										<span class="card__currency">&#8381;</span>
-									</div> -->
 									<div class="card__price-new">
 										349
 										<span class="card__currency">&#8381;</span>
@@ -530,8 +465,11 @@
 										<span class="sr-only">добавить единицу товара</span>
 									</button>
 								</div>
-								<button class="basket-btn basket-btn--accent" type="button">
+								<button class="basket-btn" type="button">
 									<span class="sr-only">добавить товар в корзину</span>
+									<svg class="basket-btn__img">
+										<use xlink:href="images/svg.svg#cart-icon"></use>
+									</svg>
 								</button>
 							</div>
 						</article>
@@ -539,13 +477,13 @@
 						<article class="card mix category-b">
 							<div class="card__top">
 								<div class="card__stocks">
-									<!-- <a class="card__stock card__stock--new" href="#">Новинка</a> -->
 									<a class="card__stock card__stock--hit" href="#">Хит</a>
-									<!-- <a class="card__stock card__stock--disc30" href="#">-30%</a> -->
-									<!-- <a class="card__stock card__stock--disc50" href="#">-50%</a> -->
 								</div>
-								<button class="favorites-btn favorites-btn--light" type="button">
+								<button class="favorites-btn" type="button">
 									<span class="sr-only">добавить в избранное</span>
+									<svg class="favorites-btn__img">
+										<use xlink:href="images/svg.svg#heart-icon"></use>
+									</svg>
 								</button>
 							</div>
 
@@ -555,10 +493,6 @@
 
 							<div class="card__bottom">
 								<div class="card__price">
-									<!-- <div class="card__price-old">
-										1999
-										<span class="card__currency">&#8381;</span>
-									</div> -->
 									<div class="card__price-new">
 										49
 										<span class="card__currency">&#8381;</span>
@@ -577,8 +511,11 @@
 										<span class="sr-only">добавить единицу товара</span>
 									</button>
 								</div>
-								<button class="basket-btn basket-btn--accent" type="button">
+								<button class="basket-btn" type="button">
 									<span class="sr-only">добавить товар в корзину</span>
+									<svg class="basket-btn__img">
+										<use xlink:href="images/svg.svg#cart-icon"></use>
+									</svg>
 								</button>
 							</div>
 						</article>
@@ -586,13 +523,13 @@
 						<article class="card mix category-c">
 							<div class="card__top">
 								<div class="card__stocks">
-									<!-- <a class="card__stock card__stock--new" href="#">Новинка</a> -->
-									<!-- <a class="card__stock card__stock--hit" href="#">Хит</a> -->
-									<a class="card__stock card__stock--disc30" href="#">-30%</a>
-									<!-- <a class="card__stock card__stock--disc50" href="#">-50%</a> -->
+									<a class="card__stock card__stock--disc" href="#">-30%</a>
 								</div>
-								<button class="favorites-btn favorites-btn--light" type="button">
+								<button class="favorites-btn" type="button">
 									<span class="sr-only">добавить в избранное</span>
+									<svg class="favorites-btn__img">
+										<use xlink:href="images/svg.svg#heart-icon"></use>
+									</svg>
 								</button>
 							</div>
 
@@ -629,8 +566,11 @@
 										<span class="sr-only">добавить единицу товара</span>
 									</button>
 								</div>
-								<button class="basket-btn basket-btn--accent" type="button">
+								<button class="basket-btn" type="button">
 									<span class="sr-only">добавить товар в корзину</span>
+									<svg class="basket-btn__img">
+										<use xlink:href="images/svg.svg#cart-icon"></use>
+									</svg>
 								</button>
 							</div>
 						</article>
@@ -639,12 +579,12 @@
 							<div class="card__top">
 								<div class="card__stocks">
 									<a class="card__stock card__stock--new" href="#">Новинка</a>
-									<!-- <a class="card__stock card__stock--hit" href="#">Хит</a>
-                                <a class="card__stock card__stock--disc30" href="#">-30%</a> -->
-									<!-- <a class="card__stock card__stock--disc50" href="#">-50%</a> -->
 								</div>
-								<button class="favorites-btn favorites-btn--light" type="button">
+								<button class="favorites-btn" type="button">
 									<span class="sr-only">добавить в избранное</span>
+									<svg class="favorites-btn__img">
+										<use xlink:href="images/svg.svg#heart-icon"></use>
+									</svg>
 								</button>
 							</div>
 
@@ -654,10 +594,6 @@
 
 							<div class="card__bottom">
 								<div class="card__price">
-									<!-- <div class="card__price-old">
-										1999
-										<span class="card__currency">&#8381;</span>
-									</div> -->
 									<div class="card__price-new">
 										877
 										<span class="card__currency">&#8381;</span>
@@ -676,8 +612,11 @@
 										<span class="sr-only">добавить единицу товара</span>
 									</button>
 								</div>
-								<button class="basket-btn basket-btn--accent" type="button">
+								<button class="basket-btn" type="button">
 									<span class="sr-only">добавить товар в корзину</span>
+									<svg class="basket-btn__img">
+										<use xlink:href="images/svg.svg#cart-icon"></use>
+									</svg>
 								</button>
 							</div>
 						</article>
@@ -685,13 +624,12 @@
 						<article class="card mix category-d">
 							<div class="card__top">
 								<div class="card__stocks">
-									<!-- <a class="card__stock card__stock--new" href="#">Новинка</a> -->
-									<!-- <a class="card__stock card__stock--hit" href="#">Хит</a>
-                                <a class="card__stock card__stock--disc30" href="#">-30%</a> -->
-									<!-- <a class="card__stock card__stock--disc50" href="#">-50%</a> -->
 								</div>
-								<button class="favorites-btn favorites-btn--light" type="button">
+								<button class="favorites-btn" type="button">
 									<span class="sr-only">добавить в избранное</span>
+									<svg class="favorites-btn__img">
+										<use xlink:href="images/svg.svg#heart-icon"></use>
+									</svg>
 								</button>
 							</div>
 
@@ -706,10 +644,6 @@
 
 							<div class="card__bottom">
 								<div class="card__price">
-									<!-- <div class="card__price-old">
-										1999
-										<span class="card__currency">&#8381;</span>
-									</div> -->
 									<div class="card__price-new">
 										600
 										<span class="card__currency">&#8381;</span>
@@ -728,8 +662,11 @@
 										<span class="sr-only">добавить единицу товара</span>
 									</button>
 								</div>
-								<button class="basket-btn basket-btn--accent" type="button">
+								<button class="basket-btn" type="button">
 									<span class="sr-only">добавить товар в корзину</span>
+									<svg class="basket-btn__img">
+										<use xlink:href="images/svg.svg#cart-icon"></use>
+									</svg>
 								</button>
 							</div>
 						</article>
@@ -804,9 +741,6 @@
 							<div class="card__box">
 								<div class="card__stocks">
 									<a class="card__stock card__stock--new" href="#">Новинка </a>
-									<!-- <a class="card__stock card__stock--hit" href="#">Хит</a> -->
-									<!-- <a class="card__stock card__stock--disc30" href="#">-30%</a>
-							<a class="card__stock card__stock--disc50" href="#">-50%</a> -->
 								</div>
 
 								<img class="card__img" src="images/actions/pineapple.jpg" alt="Ананас" width="100"
@@ -819,12 +753,6 @@
 									<span class="card__indicator">
 										В НАЛИЧИИ
 									</span>
-									<!-- <span class="card__indicator card__indicator--min">
-									ЗАКАНЧИВАЕТСЯ
-								</span> -->
-									<!-- <span class="card__indicator card__indicator--no">
-									НЕТ В НАЛИЧИИ
-								</span> -->
 								</div>
 								<div class="card__bottom">
 									<div class="card__price">
@@ -849,9 +777,6 @@
 							<div class="card__box">
 								<div class="card__stocks">
 									<a class="card__stock card__stock--new" href="#">Новинка</a>
-									<!-- <a class="card__stock card__stock--hit" href="#">Хит</a> -->
-									<!-- <a class="card__stock card__stock--disc30" href="#">-30%</a>
-							<a class="card__stock card__stock--disc50" href="#">-50%</a> -->
 								</div>
 
 								<img class="card__img" src="images/actions/coffee.jpg" alt="Кофе с коноплей" width="100"
@@ -861,15 +786,9 @@
 								<h4 class="card__title">Кофе с коноплей органический Caffé Salomoni 250г</h4>
 
 								<div class="card__indicators">
-									<!-- <span class="card__indicator">
-									В НАЛИЧИИ
-								</span> -->
 									<span class="card__indicator card__indicator--min">
 										ЗАКАНЧИВАЕТСЯ
 									</span>
-									<!-- <span class="card__indicator card__indicator--no">
-									НЕТ В НАЛИЧИИ
-								</span> -->
 								</div>
 								<div class="card__bottom">
 									<div class="card__price">
@@ -894,9 +813,6 @@
 							<div class="card__box">
 								<div class="card__stocks">
 									<a class="card__stock card__stock--new" href="#">Новинка</a>
-									<!-- <a class="card__stock card__stock--hit" href="#">Хит</a> -->
-									<!-- <a class="card__stock card__stock--disc30" href="#">-30%</a>
-							<a class="card__stock card__stock--disc50" href="#">-50%</a> -->
 								</div>
 
 								<img class="card__img" src="images/actions/strawberry.jpg" alt="Клубника" width="100"
@@ -906,12 +822,6 @@
 								<h4 class="card__title">Клубника, 1 кг</h4>
 
 								<div class="card__indicators">
-									<!-- <span class="card__indicator">
-									В НАЛИЧИИ
-								</span> -->
-									<!-- <span class="card__indicator card__indicator--min">
-									ЗАКАНЧИВАЕТСЯ
-								</span> -->
 									<span class="card__indicator card__indicator--no">
 										НЕТ В НАЛИЧИИ
 									</span>
@@ -939,9 +849,6 @@
 							<div class="card__box">
 								<div class="card__stocks">
 									<a class="card__stock card__stock--new" href="#">Новинка</a>
-									<!-- <a class="card__stock card__stock--hit" href="#">Хит</a> -->
-									<!-- <a class="card__stock card__stock--disc30" href="#">-30%</a>
-							<a class="card__stock card__stock--disc50" href="#">-50%</a> -->
 								</div>
 
 								<img class="card__img" src="images/actions/mango.jpg" alt="Манго" width="100"
@@ -954,12 +861,6 @@
 									<span class="card__indicator">
 										В НАЛИЧИИ
 									</span>
-									<!-- <span class="card__indicator card__indicator--min">
-									ЗАКАНЧИВАЕТСЯ
-								</span> -->
-									<!-- <span class="card__indicator card__indicator--no">
-									НЕТ В НАЛИЧИИ
-								</span> -->
 								</div>
 								<div class="card__bottom">
 									<div class="card__price">
@@ -984,9 +885,6 @@
 							<div class="card__box">
 								<div class="card__stocks">
 									<a class="card__stock card__stock--new" href="#">Новинка</a>
-									<!-- <a class="card__stock card__stock--hit" href="#">Хит</a> -->
-									<!-- <a class="card__stock card__stock--disc30" href="#">-30%</a>
-							<a class="card__stock card__stock--disc50" href="#">-50%</a> -->
 								</div>
 
 								<img class="card__img" src="images/actions/salmon.jpg" alt="Лосось" width="100"
@@ -999,12 +897,6 @@
 									<span class="card__indicator">
 										В НАЛИЧИИ
 									</span>
-									<!-- <span class="card__indicator card__indicator--min">
-									ЗАКАНЧИВАЕТСЯ
-								</span> -->
-									<!-- <span class="card__indicator card__indicator--no">
-									НЕТ В НАЛИЧИИ
-								</span> -->
 								</div>
 								<div class="card__bottom">
 									<div class="card__price">
@@ -1028,10 +920,7 @@
 						<article class="card card--light mix category-b">
 							<div class="card__box">
 								<div class="card__stocks">
-									<!-- <a class="card__stock card__stock--new" href="#">Новинка</a> -->
 									<a class="card__stock card__stock--hit" href="#">Хит</a>
-									<!-- <a class="card__stock card__stock--disc30" href="#">-30%</a>
-							<a class="card__stock card__stock--disc50" href="#">-50%</a> -->
 								</div>
 
 								<img class="card__img" src="images/actions/juice.jpg" alt="Сок овощной" width="100"
@@ -1041,15 +930,9 @@
 								<h4 class="card__title">Сок Granini овощной 100%, 0.5л</h4>
 
 								<div class="card__indicators">
-									<!-- <span class="card__indicator">
-									В НАЛИЧИИ
-								</span> -->
 									<span class="card__indicator card__indicator--min">
 										ЗАКАНЧИВАЕТСЯ
 									</span>
-									<!-- <span class="card__indicator card__indicator--no">
-									НЕТ В НАЛИЧИИ
-								</span> -->
 								</div>
 								<div class="card__bottom">
 									<div class="card__price">
@@ -1073,10 +956,7 @@
 						<article class="card card--light mix category-b">
 							<div class="card__box">
 								<div class="card__stocks">
-									<!-- <a class="card__stock card__stock--new" href="#">Новинка</a> -->
 									<a class="card__stock card__stock--hit" href="#">Хит</a>
-									<!-- <a class="card__stock card__stock--disc30" href="#">-30%</a>
-							<a class="card__stock card__stock--disc50" href="#">-50%</a> -->
 								</div>
 
 								<img class="card__img" src="images/actions/fruit-basket.jpg" alt="Фруктовая корзина"
@@ -1089,12 +969,6 @@
 									<span class="card__indicator">
 										В НАЛИЧИИ
 									</span>
-									<!-- <span class="card__indicator card__indicator--min">
-									ЗАКАНЧИВАЕТСЯ
-								</span> -->
-									<!-- <span class="card__indicator card__indicator--no">
-									НЕТ В НАЛИЧИИ
-								</span> -->
 								</div>
 								<div class="card__bottom">
 									<div class="card__price">
@@ -1118,10 +992,7 @@
 						<article class="card card--light mix category-b">
 							<div class="card__box">
 								<div class="card__stocks">
-									<!-- <a class="card__stock card__stock--new" href="#">Новинка</a> -->
 									<a class="card__stock card__stock--hit" href="#">Хит</a>
-									<!-- <a class="card__stock card__stock--disc30" href="#">-30%</a>
-							<a class="card__stock card__stock--disc50" href="#">-50%</a> -->
 								</div>
 
 								<img class="card__img" src="images/actions/pork-pulp.jpg" alt="Свинина мякоть"
@@ -1134,12 +1005,6 @@
 									<span class="card__indicator">
 										В НАЛИЧИИ
 									</span>
-									<!-- <span class="card__indicator card__indicator--min">
-									ЗАКАНЧИВАЕТСЯ
-								</span> -->
-									<!-- <span class="card__indicator card__indicator--no">
-									НЕТ В НАЛИЧИИ
-								</span> -->
 								</div>
 								<div class="card__bottom">
 									<div class="card__price">
@@ -1169,67 +1034,80 @@
 			<div class="container">
 
 				<ul class="brands__list">
+
 					<li class="brands__item">
-						<img class="brands__img" src="images/brands/sprite.svg" width="80" height="59"
-							alt="Логотип Sprite">
+						<svg class="brands__img">
+							<use xlink:href="images/svg.svg#sprite"></use>
+						</svg>
 					</li>
 
 					<li class="brands__item">
-						<img class="brands__img" src="images/brands/dr-pepper.svg" width="80" height="59"
-							alt="Логотип Dr-pepper">
+						<svg class="brands__img">
+							<use xlink:href="images/svg.svg#dr-pepper"></use>
+						</svg>
 					</li>
 
 					<li class="brands__item">
-						<img class="brands__img" src="images/brands/coca-cola.svg" width="80" height="59"
-							alt="Логотип Coca-cola">
+						<svg class="brands__img">
+							<use xlink:href="images/svg.svg#coca-cola"></use>
+						</svg>
 					</li>
 
 					<li class="brands__item">
-						<img class="brands__img" src="images/brands/pepsi.svg" width="80" height="59"
-							alt="Логотип Pepsi">
+						<svg class="brands__img">
+							<use xlink:href="images/svg.svg#pepsi"></use>
+						</svg>
 					</li>
 
 					<li class="brands__item">
-						<img class="brands__img" src="images/brands/redbull.svg" width="80" height="59"
-							alt="Логотип Redbull">
+						<svg class="brands__img">
+							<use xlink:href="images/svg.svg#redbull"></use>
+						</svg>
 					</li>
 
 					<li class="brands__item">
-						<img class="brands__img" src="images/brands/fanta.svg" width="80" height="59"
-							alt="Логотип Fanta">
+						<svg class="brands__img">
+							<use xlink:href="images/svg.svg#fanta"></use>
+						</svg>
 					</li>
 
 					<li class="brands__item">
-						<img class="brands__img" src="images/brands/sprite.svg" width="80" height="59"
-							alt="Логотип Sprite">
+						<svg class="brands__img">
+							<use xlink:href="images/svg.svg#sprite"></use>
+						</svg>
 					</li>
 
 					<li class="brands__item">
-						<img class="brands__img" src="images/brands/dr-pepper.svg" width="80" height="59"
-							alt="Логотип Sprite">
+						<svg class="brands__img">
+							<use xlink:href="images/svg.svg#dr-pepper"></use>
+						</svg>
 					</li>
 
 					<li class="brands__item">
-						<img class="brands__img" src="images/brands/coca-cola.svg" width="80" height="59"
-							alt="Логотип Coca-cola">
+						<svg class="brands__img">
+							<use xlink:href="images/svg.svg#coca-cola"></use>
+						</svg>
 					</li>
 
 					<li class="brands__item">
-						<img class="brands__img" src="images/brands/pepsi.svg" width="80" height="59"
-							alt="Логотип Pepsi">
+						<svg class="brands__img">
+							<use xlink:href="images/svg.svg#pepsi"></use>
+						</svg>
 					</li>
 
 					<li class="brands__item">
-						<img class="brands__img" src="images/brands/redbull.svg" width="80" height="59"
-							alt="Логотип Redbull">
+						<svg class="brands__img">
+							<use xlink:href="images/svg.svg#redbull"></use>
+						</svg>
 					</li>
 
 					<li class="brands__item">
-						<img class="brands__img" src="images/brands/fanta.svg" width="80" height="59"
-							alt="Логотип Fanta">
+						<svg class="brands__img">
+							<use xlink:href="images/svg.svg#fanta"></use>
+						</svg>
 					</li>
+
 				</ul>
-
 
 			</div>
 		</div>
@@ -1404,28 +1282,41 @@
 				</nav>
 
 				<address class="contacts">
-					<a class="contacts__phone" href="phone:+7907288365">Горячая линия +7 907 288 365</a>
+					<a class="contacts__phone" href="tel:+7907288365">Горячая линия +7 907 288 365</a>
 					<p class="contacts__text">Санкт-Петербург, ул. Ленина, 1</p>
 
 					<ul class="social">
 						<li class="social__item">
-							<a class="social__link social__link--facebook" href="#">
+							<a class="social__link" href="#">
 								<span class="sr-only">Ссылка на facebook</span>
+								<svg class="social__img">
+									<use xlink:href="images/svg.svg#facebook"></use>
+								</svg>
+
 							</a>
 						</li>
 						<li class="social__item">
-							<a class="social__link social__link--youtube" href="#">
+							<a class="social__link" href="#">
 								<span class="sr-only">Ссылка на youtube</span>
+								<svg class="social__img">
+									<use xlink:href="images/svg.svg#youtube"></use>
+								</svg>
 							</a>
 						</li>
 						<li class="social__item">
-							<a class="social__link social__link--telegram" href="#">
+							<a class="social__link" href="#">
 								<span class="sr-only">Ссылка на telegram</span>
+								<svg class="social__img">
+									<use xlink:href="images/svg.svg#telegram"></use>
+								</svg>
 							</a>
 						</li>
 						<li class="social__item">
-							<a class="social__link social__link--instagram" href="#">
+							<a class="social__link" href="#">
 								<span class="sr-only">Ссылка на instagram</span>
+								<svg class="social__img">
+									<use xlink:href="images/svg.svg#instagram"></use>
+								</svg>
 							</a>
 						</li>
 					</ul>
@@ -1437,9 +1328,15 @@
 				<div class="footer__pay-inner">
 					<a class="footer__pay footer__pay--visa" href="#">
 						<span class="sr-only">Перейти на сайт Visa</span>
+						<svg class="footer__pay-img">
+							<use xlink:href="images/svg.svg#visa"></use>
+						</svg>
 					</a>
 					<a class="footer__pay footer__pay--master" href="#">
 						<span class="sr-only">Перейти на сайт Mastercard</span>
+						<svg class="footer__pay-img">
+							<use xlink:href="images/svg.svg#mastercard"></use>
+						</svg>
 					</a>
 				</div>
 			</div>
@@ -1549,7 +1446,6 @@
 
 		<button class="menu-btn menu-btn--side" aria-label="каталог товаров" type="button" data-menu="side">
 			<span class="menu-btn__primary">Каталог продуктов</span>
-			<!-- <span class="menu-btn__secondary">Каталог</span> -->
 			<ul class="menu-btn__list">
 				<li class="menu-btn__item">
 					<a class="menu-btn__link" href="#">
@@ -1621,25 +1517,38 @@
 				365</a>
 			<p class="contacts__text contacts__text--mark">Санкт-Петербург, ул. Ленина, 1</p>
 
-			<ul class="social social--dark">
+			<ul class="social">
 				<li class="social__item">
-					<a class="social__link social__link--facebook" href="#">
+					<a class="social__link" href="#">
 						<span class="sr-only">Ссылка на facebook</span>
+						<svg class="social__img social__img--dark">
+							<use xlink:href="images/svg.svg#facebook"></use>
+						</svg>
+
 					</a>
 				</li>
 				<li class="social__item">
-					<a class="social__link social__link--youtube" href="#">
+					<a class="social__link" href="#">
 						<span class="sr-only">Ссылка на youtube</span>
+						<svg class="social__img social__img--dark">
+							<use xlink:href="images/svg.svg#youtube"></use>
+						</svg>
 					</a>
 				</li>
 				<li class="social__item">
-					<a class="social__link social__link--telegram" href="#">
+					<a class="social__link" href="#">
 						<span class="sr-only">Ссылка на telegram</span>
+						<svg class="social__img social__img--dark">
+							<use xlink:href="images/svg.svg#telegram"></use>
+						</svg>
 					</a>
 				</li>
 				<li class="social__item">
-					<a class="social__link social__link--instagram" href="#">
+					<a class="social__link" href="#">
 						<span class="sr-only">Ссылка на instagram</span>
+						<svg class="social__img social__img--dark">
+							<use xlink:href="images/svg.svg#instagram"></use>
+						</svg>
 					</a>
 				</li>
 			</ul>
@@ -1690,7 +1599,6 @@
 
 
 	</div>
-
 
 	<script src="js/main.min.js"></script>
 </body>

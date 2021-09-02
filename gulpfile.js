@@ -5,6 +5,7 @@ const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
+const svgstore = require('gulp-svgstore');
 const del = require('del');
 const browserSync = require('browser-sync').create();
 
@@ -59,6 +60,12 @@ function images() {
     .pipe(dest('dist/images'))
 }
 
+function svgSprite() {
+  return src('app/images/svg/**/*.svg')
+  .pipe(svgstore())
+  .pipe(dest('./app/images/'))
+}
+
 function build() {
   return src([
     'app/**/*.html',
@@ -86,7 +93,7 @@ exports.images = images;
 exports.cleanDist = cleanDist;
 exports.build = series(cleanDist, images, build);
 
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(styles, scripts, svgSprite, browsersync, watching);
 
 
 

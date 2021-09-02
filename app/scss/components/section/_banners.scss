@@ -23,12 +23,13 @@
 		text-transform: uppercase;
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: left center;
+		background-position: right center;
 		border-radius: 6px;
 
 		&--light {
 			grid-column: span 2;
 			color: $primary;
+			background-position: 30% center;
 			text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
 
 			.banners__link {
@@ -66,32 +67,24 @@
 			opacity: 0.5;
 		}
 	}
-}
 
-@media (max-width: 1200px) {
-	.banners {
+	@media (max-width: 1200px) {
 
 		&__item {
 			padding: 15px;
 		}
 	}
-}
 
-@media (max-width: 992px) {
-
-	.banners {
+	@media (max-width: 992px) {
 
 		&__wrapper {
 			grid-template-columns: 1fr 1fr;
 			grid-row-gap: 25px;
 		}
-
 	}
-}
 
-@media (max-width: 576px) {
+	@media (max-width: 576px) {
 
-	.banners {
 		padding-bottom: 48px;
 
 		&__wrapper {
@@ -116,8 +109,6 @@
 			}
 		}
 
-		// &__link {
-		// 	margin-top: auto;
-		// }
 	}
+
 }

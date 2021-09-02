@@ -19,7 +19,6 @@
         }
     }
 
-
     &__descr {
         margin-bottom: 12px;
         font-weight: 700;
@@ -38,12 +37,8 @@
     &__item--support {
         background-image: url('../images/icons/support.svg');
     }
-}
 
-
-@media (max-width: 992px) {
-
-    .advantages {
+    @media (max-width: 992px) {
 
         &__list {
             flex-wrap: wrap;
@@ -52,14 +47,9 @@
         &__item:not(:last-child) {
             margin-bottom: 26px;
         }
-
     }
 
-}
-
-@media (max-width: 768px) {
-
-    .advantages {
+    @media (max-width: 768px) {
 
         &__list {
             flex-wrap: nowrap;
@@ -74,15 +64,12 @@
 
         }
     }
-}
 
-@media (max-width: 576px) {
+    @media (max-width: 576px) {
 
-    .advantages {
         padding: 45px 15px 30px;
 
         &__list {
-
             align-items: flex-start;
         }
 

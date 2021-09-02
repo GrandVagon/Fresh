@@ -64,7 +64,6 @@
     &--addr {
       padding-left: 44px;
 
-
       &::before {
         width: 32px;
         background-image: url('../images/icons/del-address-icon.svg');
@@ -119,7 +118,7 @@
   &__user-num {
     position: absolute;
     top: 3px;
-    left: 2px;
+    left: 0px;
     width: 18px;
     height: 18px;
     background-color: $primary;
@@ -173,12 +172,7 @@
     transition: all 0.5s;
   }
 
-
-}
-
-@media (max-width: 1200px) {
-
-  .header {
+  @media (max-width: 1200px) {
 
     &__logo {
       display: none;
@@ -189,11 +183,8 @@
     }
 
   }
-}
 
-@media (max-width: 992px) {
-
-  .header {
+  @media (max-width: 992px) {
 
     &__top {
       display: flex;
@@ -253,12 +244,7 @@
     }
   }
 
-}
-
-@media (max-width: 768px) {
-
-  .header {
-
+  @media (max-width: 768px) {
 
     &__logo-img {
       margin-right: 26px;
@@ -268,12 +254,10 @@
       top: 0;
       left: 0;
     }
+
   }
-}
 
-@media (max-width: 576px) {
-
-  .header {
+  @media (max-width: 576px) {
 
     &__logo-img {
       margin-right: 8px;

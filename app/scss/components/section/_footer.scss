@@ -64,20 +64,9 @@
 		}
 	}
 
-	&__contacts {
-		font-style: normal;
-		font: inherit;
-		color: $primary;
-	}
-
-	&__contacts-phone {
-		display: block;
-		margin-bottom: 18px;
-	}
-
 	&__bottom {
 		display: flex;
-		justify-content: flex-end;
+		justify-content: space-between;
 		align-items: center;
 		padding: 25px 0;
 	}
@@ -93,29 +82,31 @@
 		display: flex;
 	}
 
-	&__pay:not(:first-child) {
+	&__pay &__pay:not(:first-child) {
 		margin-left: 20px;
 	}
 
-	&__pay {
-		background-repeat: no-repeat;
+	&__pay-img {
+		display: block;
+		max-width: 93px;
 		height: 30px;
+		transition: all 0.4s;
+		fill: $primary;
 
-		&--visa {
-			width: 93px;
-			background-image: url('../images/icons/visa.svg');
+		&:hover {
+			opacity: 0.7;
 		}
 
-		&--master {
-			width: 50px;
-			background-image: url('../images/icons/mastercard.svg');
+		&:active {
+			fill: $secondary;
+		}
+
+		&:focus {
+			fill: $dark-500;
 		}
 	}
-}
 
-@media(max-width: 992px) {
-
-	.footer {
+	@media(max-width: 992px) {
 
 		&__inner {
 			flex-wrap: wrap;
@@ -129,11 +120,7 @@
 		}
 	}
 
-}
-
-@media(max-width: 568px) {
-
-	.footer {
+	@media(max-width: 568px) {
 
 		&::before {
 			bottom: 120px;
@@ -141,10 +128,6 @@
 
 		.container {
 			padding: 0;
-		}
-
-		.social {
-			margin: 18px auto 0;
 		}
 
 		.logo__img {

@@ -1,7 +1,9 @@
 .star {
+    position: relative;
     display: flex;
     align-items: center;
     margin-left: auto;
+    z-index: 0;
 
     &__num {
         margin-right: 3px;

@@ -290,339 +290,476 @@
 
 						<article class="card mix category-a">
 
-							<div class="card__top">
+							<button class="favorites-btn" type="button">
+								<span class="sr-only">добавить в избранное</span>
+								<svg class="favorites-btn__img">
+									<use xlink:href="images/svg.svg#heart-icon"></use>
+								</svg>
+							</button>
+
+							<div class="card__box">
 								<div class="card__stocks">
 									<a class="card__stock card__stock--new" href="#">Новинка</a>
 									<a class="card__stock card__stock--disc" href="#">-50%</a>
 								</div>
-								<button class="favorites-btn" type="button">
-									<span class="sr-only">добавить в избранное</span>
-									<svg class="favorites-btn__img">
-										<use xlink:href="images/svg.svg#heart-icon"></use>
-									</svg>
-								</button>
+								<img class="card__img" src="images/products/pineapple.jpg" alt="Ананас" height="224" />
 							</div>
 
-							<img class="card__img" src="images/products/pineapple.jpg" alt="Ананас" height="224" />
-							<h4 class="card__title">Ананас, 1кг</h4>
+							<div class="card__content">
 
-							<div class="card__bottom">
-								<div class="card__price">
-									<div class="card__price-old">
-										1999
-										<span class="card__currency">&#8381;</span>
+								<div class="card__row">
+									<div class="card__indicators">
+										<span class="card__indicator">
+											В НАЛИЧИИ
+										</span>
 									</div>
-									<div class="card__price-new">
-										999
-										<span class="card__currency">&#8381;</span>
+									<div class="star">
+										<span class="star__num">4.5</span>
+										<span class="star__icon" data-rateyo-rating="4.5"></span>
 									</div>
 								</div>
 
-								<div class="card__quantity">
-									<button class="card__minus-btn" type="button" name="button">
-										<span class="sr-only">убрать единицу товара</span>
-									</button>
-									<label>
-										<span class="sr-only">Поле ввода количества товара</span>
-										<input class="card__quantity-input" type="text" name="name" value="1" />
-									</label>
-									<button class="card__plus-btn" type="button" name="button">
-										<span class="sr-only">добавить единицу товара</span>
+								<h4 class="card__title">Ананас, 1кг</h4>
+
+								<div class="card__bottom">
+									<div class="card__price">
+										<div class="card__price-old">
+											1999
+											<span class="card__currency">&#8381;</span>
+										</div>
+										<div class="card__price-new">
+											999
+											<span class="card__currency">&#8381;</span>
+										</div>
+									</div>
+
+									<div class="card__quantity">
+										<button class="card__minus-btn" type="button" name="button">
+											<span class="sr-only">убрать единицу товара</span>
+										</button>
+										<label>
+											<span class="sr-only">Поле ввода количества товара</span>
+											<input class="card__quantity-input" type="text" name="name" value="1" />
+										</label>
+										<button class="card__plus-btn" type="button" name="button">
+											<span class="sr-only">добавить единицу товара</span>
+										</button>
+									</div>
+									<button class="basket-btn" type="button">
+										<span class="sr-only">добавить товар в корзину</span>
+										<svg class="basket-btn__img">
+											<use xlink:href="images/svg.svg#cart-icon"></use>
+										</svg>
 									</button>
 								</div>
-								<button class="basket-btn" type="button">
-									<span class="sr-only">добавить товар в корзину</span>
-									<svg class="basket-btn__img">
-										<use xlink:href="images/svg.svg#cart-icon"></use>
-									</svg>
-								</button>
 							</div>
 						</article>
 
 						<article class="card mix category-a">
-							<div class="card__top">
+
+							<button class="favorites-btn" type="button">
+								<span class="sr-only">добавить в избранное</span>
+								<svg class="favorites-btn__img">
+									<use xlink:href="images/svg.svg#heart-icon"></use>
+								</svg>
+							</button>
+
+							<div class="card__box">
 								<div class="card__stocks">
 								</div>
-								<button class="favorites-btn" type="button">
-									<span class="sr-only">добавить в избранное</span>
-									<svg class="favorites-btn__img">
-										<use xlink:href="images/svg.svg#heart-icon"></use>
-									</svg>
-								</button>
+								<img class="card__img" src="images/products/lemon.jpg" alt="Лимон" height="224" />
+
 							</div>
 
-							<img class="card__img" src="images/products/lemon.jpg" alt="Лимон" height="224" />
-							<h4 class="card__title">Лимон, 1кг</h4>
+							<div class="card__content">
 
-							<div class="card__bottom">
-								<div class="card__price">
-									<div class="card__price-new">
-										199
-										<span class="card__currency">&#8381;</span>
+								<div class="card__row">
+									<div class="card__indicators">
+										<span class="card__indicator">
+											В НАЛИЧИИ
+										</span>
+									</div>
+
+									<div class="star">
+										<span class="star__num">4.5</span>
+										<span class="star__icon" data-rateyo-rating="4.5"></span>
 									</div>
 								</div>
 
-								<div class="card__quantity">
-									<button class="card__minus-btn" type="button" name="button">
-										<span class="sr-only">убрать единицу товара</span>
-									</button>
-									<label>
-										<span class="sr-only">Поле ввода количества товара</span>
-										<input class="card__quantity-input" type="text" name="name" value="1" />
-									</label>
-									<button class="card__plus-btn" type="button" name="button">
-										<span class="sr-only">добавить единицу товара</span>
+								<h4 class="card__title">Лимон, 1кг</h4>
+
+								<div class="card__bottom">
+									<div class="card__price">
+										<div class="card__price-new">
+											199
+											<span class="card__currency">&#8381;</span>
+										</div>
+									</div>
+
+									<div class="card__quantity">
+										<button class="card__minus-btn" type="button" name="button">
+											<span class="sr-only">убрать единицу товара</span>
+										</button>
+										<label>
+											<span class="sr-only">Поле ввода количества товара</span>
+											<input class="card__quantity-input" type="text" name="name" value="1" />
+										</label>
+										<button class="card__plus-btn" type="button" name="button">
+											<span class="sr-only">добавить единицу товара</span>
+										</button>
+									</div>
+									<button class="basket-btn" type="button">
+										<span class="sr-only">добавить товар в корзину</span>
+										<svg class="basket-btn__img">
+											<use xlink:href="images/svg.svg#cart-icon"></use>
+										</svg>
 									</button>
 								</div>
-								<button class="basket-btn" type="button">
-									<span class="sr-only">добавить товар в корзину</span>
-									<svg class="basket-btn__img">
-										<use xlink:href="images/svg.svg#cart-icon"></use>
-									</svg>
-								</button>
 							</div>
 						</article>
 
 						<article class="card mix category-a">
-							<div class="card__top">
+
+							<button class="favorites-btn" type="button">
+								<span class="sr-only">добавить в избранное</span>
+								<svg class="favorites-btn__img">
+									<use xlink:href="images/svg.svg#heart-icon"></use>
+								</svg>
+							</button>
+
+							<div class="card__box">
 								<div class="card__stocks">
 									<a class="card__stock card__stock--hit" href="#">Хит</a>
 								</div>
-								<button class="favorites-btn" type="button">
-									<span class="sr-only">добавить в избранное</span>
-									<svg class="favorites-btn__img">
-										<use xlink:href="images/svg.svg#heart-icon"></use>
-									</svg>
-								</button>
+								<img class="card__img" src="images/products/dragon-fruit.jpg" alt="Питахайя"
+									height="224" />
 							</div>
 
-							<img class="card__img" src="images/products/dragon-fruit.jpg" alt="Питахайя" height="224" />
-							<h4 class="card__title">Питахайя красная с белой мякотью, 1шт</h4>
+							<div class="card__content">
 
-							<div class="card__bottom">
-								<div class="card__price">
-									<div class="card__price-new">
-										1019
-										<span class="card__currency">&#8381;</span>
+								<div class="card__row">
+									<div class="card__indicators">
+										<span class="card__indicator">
+											В НАЛИЧИИ
+										</span>
+									</div>
+
+									<div class="star">
+										<span class="star__num">4.5</span>
+										<span class="star__icon" data-rateyo-rating="4.5"></span>
 									</div>
 								</div>
 
-								<div class="card__quantity">
-									<button class="card__minus-btn" type="button" name="button">
-										<span class="sr-only">убрать единицу товара</span>
-									</button>
-									<label>
-										<span class="sr-only">Поле ввода количества товара</span>
-										<input class="card__quantity-input" type="text" name="name" value="1" />
-									</label>
-									<button class="card__plus-btn" type="button" name="button">
-										<span class="sr-only">добавить единицу товара</span>
+								<h4 class="card__title">Питахайя красная с белой мякотью, 1шт</h4>
+
+								<div class="card__bottom">
+									<div class="card__price">
+										<div class="card__price-new">
+											1019
+											<span class="card__currency">&#8381;</span>
+										</div>
+									</div>
+
+									<div class="card__quantity">
+										<button class="card__minus-btn" type="button" name="button">
+											<span class="sr-only">убрать единицу товара</span>
+										</button>
+										<label>
+											<span class="sr-only">Поле ввода количества товара</span>
+											<input class="card__quantity-input" type="text" name="name" value="1" />
+										</label>
+										<button class="card__plus-btn" type="button" name="button">
+											<span class="sr-only">добавить единицу товара</span>
+										</button>
+									</div>
+									<button class="basket-btn" type="button">
+										<span class="sr-only">добавить товар в корзину</span>
+										<svg class="basket-btn__img">
+											<use xlink:href="images/svg.svg#cart-icon"></use>
+										</svg>
 									</button>
 								</div>
-								<button class="basket-btn" type="button">
-									<span class="sr-only">добавить товар в корзину</span>
-									<svg class="basket-btn__img">
-										<use xlink:href="images/svg.svg#cart-icon"></use>
-									</svg>
-								</button>
 							</div>
 						</article>
 
 						<article class="card mix category-b">
-							<div class="card__top">
+
+							<button class="favorites-btn" type="button">
+								<span class="sr-only">добавить в избранное</span>
+								<svg class="favorites-btn__img">
+									<use xlink:href="images/svg.svg#heart-icon"></use>
+								</svg>
+							</button>
+
+							<div class="card__box">
 								<div class="card__stocks">
 									<a class="card__stock card__stock--new" href="#">Новинка</a>
 								</div>
-								<button class="favorites-btn" type="button">
-									<span class="sr-only">добавить в избранное</span>
-									<svg class="favorites-btn__img">
-										<use xlink:href="images/svg.svg#heart-icon"></use>
-									</svg>
-								</button>
+
+								<img class="card__img" src="images/products/paprik.jpg" alt="Перец оранжевый"
+									height="224" />
 							</div>
 
-							<img class="card__img" src="images/products/paprik.jpg" alt="Перец оранжевый"
-								height="224" />
-							<h4 class="card__title">Перец оранжевый, 1кг</h4>
 
-							<div class="card__bottom">
-								<div class="card__price">
-									<div class="card__price-new">
-										349
-										<span class="card__currency">&#8381;</span>
+							<div class="card__content">
+
+								<div class="card__row">
+
+									<div class="card__indicators">
+										<span class="card__indicator">
+											В НАЛИЧИИ
+										</span>
+									</div>
+
+									<div class="star">
+										<span class="star__num">4.5</span>
+										<span class="star__icon" data-rateyo-rating="4.5"></span>
 									</div>
 								</div>
 
-								<div class="card__quantity">
-									<button class="card__minus-btn" type="button" name="button">
-										<span class="sr-only">убрать единицу товара</span>
-									</button>
-									<label>
-										<span class="sr-only">Поле ввода количества товара</span>
-										<input class="card__quantity-input" type="text" name="name" value="1" />
-									</label>
-									<button class="card__plus-btn" type="button" name="button">
-										<span class="sr-only">добавить единицу товара</span>
+								<h4 class="card__title">Перец оранжевый, 1кг</h4>
+
+								<div class="card__bottom">
+									<div class="card__price">
+										<div class="card__price-new">
+											349
+											<span class="card__currency">&#8381;</span>
+										</div>
+									</div>
+
+									<div class="card__quantity">
+										<button class="card__minus-btn" type="button" name="button">
+											<span class="sr-only">убрать единицу товара</span>
+										</button>
+										<label>
+											<span class="sr-only">Поле ввода количества товара</span>
+											<input class="card__quantity-input" type="text" name="name" value="1" />
+										</label>
+										<button class="card__plus-btn" type="button" name="button">
+											<span class="sr-only">добавить единицу товара</span>
+										</button>
+									</div>
+									<button class="basket-btn" type="button">
+										<span class="sr-only">добавить товар в корзину</span>
+										<svg class="basket-btn__img">
+											<use xlink:href="images/svg.svg#cart-icon"></use>
+										</svg>
 									</button>
 								</div>
-								<button class="basket-btn" type="button">
-									<span class="sr-only">добавить товар в корзину</span>
-									<svg class="basket-btn__img">
-										<use xlink:href="images/svg.svg#cart-icon"></use>
-									</svg>
-								</button>
 							</div>
 						</article>
 
 						<article class="card mix category-b">
-							<div class="card__top">
+
+							<button class="favorites-btn" type="button">
+								<span class="sr-only">добавить в избранное</span>
+								<svg class="favorites-btn__img">
+									<use xlink:href="images/svg.svg#heart-icon"></use>
+								</svg>
+							</button>
+
+							<div class="card__box">
 								<div class="card__stocks">
 									<a class="card__stock card__stock--hit" href="#">Хит</a>
 								</div>
-								<button class="favorites-btn" type="button">
-									<span class="sr-only">добавить в избранное</span>
-									<svg class="favorites-btn__img">
-										<use xlink:href="images/svg.svg#heart-icon"></use>
-									</svg>
-								</button>
+
+								<img class="card__img" src="images/products/carrot.jpg" alt="Морковь молодая"
+									height="224" />
 							</div>
 
-							<img class="card__img" src="images/products/carrot.jpg" alt="Морковь молодая"
-								height="224" />
-							<h4 class="card__title">Морковь молодая с бабушкиной грядки, 1кг</h4>
+							<div class="card__content">
 
-							<div class="card__bottom">
-								<div class="card__price">
-									<div class="card__price-new">
-										49
-										<span class="card__currency">&#8381;</span>
+								<div class="card__row">
+
+									<div class="card__indicators">
+										<span class="card__indicator">
+											В НАЛИЧИИ
+										</span>
+									</div>
+
+									<div class="star">
+										<span class="star__num">4.5</span>
+										<span class="star__icon" data-rateyo-rating="4.5"></span>
 									</div>
 								</div>
 
-								<div class="card__quantity">
-									<button class="card__minus-btn" type="button" name="button">
-										<span class="sr-only">убрать единицу товара</span>
-									</button>
-									<label>
-										<span class="sr-only">Поле ввода количества товара</span>
-										<input class="card__quantity-input" type="text" name="name" value="1" />
-									</label>
-									<button class="card__plus-btn" type="button" name="button">
-										<span class="sr-only">добавить единицу товара</span>
+								<h4 class="card__title">Морковь молодая с бабушкиной грядки, 1кг</h4>
+
+								<div class="card__bottom">
+									<div class="card__price">
+										<div class="card__price-new">
+											49
+											<span class="card__currency">&#8381;</span>
+										</div>
+									</div>
+
+									<div class="card__quantity">
+										<button class="card__minus-btn" type="button" name="button">
+											<span class="sr-only">убрать единицу товара</span>
+										</button>
+										<label>
+											<span class="sr-only">Поле ввода количества товара</span>
+											<input class="card__quantity-input" type="text" name="name" value="1" />
+										</label>
+										<button class="card__plus-btn" type="button" name="button">
+											<span class="sr-only">добавить единицу товара</span>
+										</button>
+									</div>
+									<button class="basket-btn" type="button">
+										<span class="sr-only">добавить товар в корзину</span>
+										<svg class="basket-btn__img">
+											<use xlink:href="images/svg.svg#cart-icon"></use>
+										</svg>
 									</button>
 								</div>
-								<button class="basket-btn" type="button">
-									<span class="sr-only">добавить товар в корзину</span>
-									<svg class="basket-btn__img">
-										<use xlink:href="images/svg.svg#cart-icon"></use>
-									</svg>
-								</button>
 							</div>
 						</article>
 
 						<article class="card mix category-c">
-							<div class="card__top">
+
+							<button class="favorites-btn" type="button">
+								<span class="sr-only">добавить в избранное</span>
+								<svg class="favorites-btn__img">
+									<use xlink:href="images/svg.svg#heart-icon"></use>
+								</svg>
+							</button>
+
+							<div class="card__box">
+
 								<div class="card__stocks">
 									<a class="card__stock card__stock--disc" href="#">-30%</a>
 								</div>
-								<button class="favorites-btn" type="button">
-									<span class="sr-only">добавить в избранное</span>
-									<svg class="favorites-btn__img">
-										<use xlink:href="images/svg.svg#heart-icon"></use>
-									</svg>
-								</button>
+
+								<img class="card__img" src="images/products/juice.jpg" alt="Напиток сокосодержащий"
+									height="224" />
 							</div>
 
-							<img class="card__img" src="images/products/juice.jpg" alt="Напиток сокосодержащий"
-								height="224" />
-							<h4 class="card__title card__title--long">
-								Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин
-								безалкогольный...</h4>
+							<div class="card__content">
 
-							<h4 class="card__title card__title--short">
-								Напиток сокосодержащий Sanpellegrino...</h4>
+								<div class="card__row">
 
-							<div class="card__bottom">
-								<div class="card__price">
-									<div class="card__price-old">
-										299
-										<span class="card__currency">&#8381;</span>
+									<div class="card__indicators">
+										<span class="card__indicator">
+											В НАЛИЧИИ
+										</span>
 									</div>
-									<div class="card__price-new">
-										199
-										<span class="card__currency">&#8381;</span>
+
+									<div class="star">
+										<span class="star__num">4.5</span>
+										<span class="star__icon" data-rateyo-rating="4.5"></span>
 									</div>
 								</div>
 
-								<div class="card__quantity">
-									<button class="card__minus-btn" type="button" name="button">
-										<span class="sr-only">убрать единицу товара</span>
-									</button>
-									<label>
-										<span class="sr-only">Поле ввода количества товара</span>
-										<input class="card__quantity-input" type="text" name="name" value="1" />
-									</label>
-									<button class="card__plus-btn" type="button" name="button">
-										<span class="sr-only">добавить единицу товара</span>
+								<h4 class="card__title card__title--long">
+									Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин
+									безалкогольный...</h4>
+
+								<h4 class="card__title card__title--short">
+									Напиток сокосодержащий Sanpellegrino...</h4>
+
+								<div class="card__bottom">
+									<div class="card__price">
+										<div class="card__price-old">
+											299
+											<span class="card__currency">&#8381;</span>
+										</div>
+										<div class="card__price-new">
+											199
+											<span class="card__currency">&#8381;</span>
+										</div>
+									</div>
+
+									<div class="card__quantity">
+										<button class="card__minus-btn" type="button" name="button">
+											<span class="sr-only">убрать единицу товара</span>
+										</button>
+										<label>
+											<span class="sr-only">Поле ввода количества товара</span>
+											<input class="card__quantity-input" type="text" name="name" value="1" />
+										</label>
+										<button class="card__plus-btn" type="button" name="button">
+											<span class="sr-only">добавить единицу товара</span>
+										</button>
+									</div>
+									<button class="basket-btn" type="button">
+										<span class="sr-only">добавить товар в корзину</span>
+										<svg class="basket-btn__img">
+											<use xlink:href="images/svg.svg#cart-icon"></use>
+										</svg>
 									</button>
 								</div>
-								<button class="basket-btn" type="button">
-									<span class="sr-only">добавить товар в корзину</span>
-									<svg class="basket-btn__img">
-										<use xlink:href="images/svg.svg#cart-icon"></use>
-									</svg>
-								</button>
 							</div>
 						</article>
 
 						<article class="card mix category-c">
-							<div class="card__top">
+
+							<button class="favorites-btn" type="button">
+								<span class="sr-only">добавить в избранное</span>
+								<svg class="favorites-btn__img">
+									<use xlink:href="images/svg.svg#heart-icon"></use>
+								</svg>
+							</button>
+
+							<div class="card__box">
 								<div class="card__stocks">
 									<a class="card__stock card__stock--new" href="#">Новинка</a>
 								</div>
-								<button class="favorites-btn" type="button">
-									<span class="sr-only">добавить в избранное</span>
-									<svg class="favorites-btn__img">
-										<use xlink:href="images/svg.svg#heart-icon"></use>
-									</svg>
-								</button>
+
+								<img class="card__img" src="images/products/coffee.jpg" alt="Кофе с коноплей"
+									height="224" />
 							</div>
 
-							<img class="card__img" src="images/products/coffee.jpg" alt="Кофе с коноплей"
-								height="224" />
-							<h4 class="card__title">Кофе с коноплей органический Caffé Salomoni 250г</h4>
+							<div class="card__content">
 
-							<div class="card__bottom">
-								<div class="card__price">
-									<div class="card__price-new">
-										877
-										<span class="card__currency">&#8381;</span>
+								<div class="card__row">
+
+									<div class="card__indicators">
+										<span class="card__indicator">
+											В НАЛИЧИИ
+										</span>
+									</div>
+
+									<div class="star">
+										<span class="star__num">4.5</span>
+										<span class="star__icon" data-rateyo-rating="4.5"></span>
 									</div>
 								</div>
 
-								<div class="card__quantity">
-									<button class="card__minus-btn" type="button" name="button">
-										<span class="sr-only">убрать единицу товара</span>
-									</button>
-									<label>
-										<span class="sr-only">Поле ввода количества товара</span>
-										<input class="card__quantity-input" type="text" name="name" value="1" />
-									</label>
-									<button class="card__plus-btn" type="button" name="button">
-										<span class="sr-only">добавить единицу товара</span>
+								<h4 class="card__title">Кофе с коноплей органический Caffé Salomoni 250г</h4>
+
+								<div class="card__bottom">
+									<div class="card__price">
+										<div class="card__price-new">
+											877
+											<span class="card__currency">&#8381;</span>
+										</div>
+									</div>
+
+									<div class="card__quantity">
+										<button class="card__minus-btn" type="button" name="button">
+											<span class="sr-only">убрать единицу товара</span>
+										</button>
+										<label>
+											<span class="sr-only">Поле ввода количества товара</span>
+											<input class="card__quantity-input" type="text" name="name" value="1" />
+										</label>
+										<button class="card__plus-btn" type="button" name="button">
+											<span class="sr-only">добавить единицу товара</span>
+										</button>
+									</div>
+									<button class="basket-btn" type="button">
+										<span class="sr-only">добавить товар в корзину</span>
+										<svg class="basket-btn__img">
+											<use xlink:href="images/svg.svg#cart-icon"></use>
+										</svg>
 									</button>
 								</div>
-								<button class="basket-btn" type="button">
-									<span class="sr-only">добавить товар в корзину</span>
-									<svg class="basket-btn__img">
-										<use xlink:href="images/svg.svg#cart-icon"></use>
-									</svg>
-								</button>
 							</div>
 						</article>
 
 						<article class="card mix category-d">
-							<div class="card__top">
+
+							<div class="card__box">
 								<div class="card__stocks">
 								</div>
 								<button class="favorites-btn" type="button">
@@ -635,43 +772,64 @@
 
 							<img class="card__img" src="images/products/ketchup.jpg" alt="Кетчуп томатный"
 								height="224" />
-							<h4 class="card__title card__title--long">
-								Кетчуп томатный детский органический Bio-Zentrale 500мл
-							</h4>
-							<h4 class="card__title card__title--short">
-								Кетчуп томатный детский органический...
-							</h4>
 
-							<div class="card__bottom">
-								<div class="card__price">
-									<div class="card__price-new">
-										600
-										<span class="card__currency">&#8381;</span>
+							<div class="card__content">
+
+								<div class="card__row">
+
+									<div class="card__indicators">
+										<span class="card__indicator">
+											В НАЛИЧИИ
+										</span>
+									</div>
+
+									<div class="star">
+										<span class="star__num">4.5</span>
+										<span class="star__icon" data-rateyo-rating="4.5"></span>
 									</div>
 								</div>
 
-								<div class="card__quantity">
-									<button class="card__minus-btn" type="button" name="button">
-										<span class="sr-only">убрать единицу товара</span>
-									</button>
-									<label>
-										<span class="sr-only">Поле ввода количества товара</span>
-										<input class="card__quantity-input" type="text" name="name" value="1" />
-									</label>
-									<button class="card__plus-btn" type="button" name="button">
-										<span class="sr-only">добавить единицу товара</span>
+								<h4 class="card__title card__title--long">
+									Кетчуп томатный детский органический Bio-Zentrale 500мл
+								</h4>
+								<h4 class="card__title card__title--short">
+									Кетчуп томатный детский органический...
+								</h4>
+
+								<div class="card__bottom">
+									<div class="card__price">
+										<div class="card__price-new">
+											600
+											<span class="card__currency">&#8381;</span>
+										</div>
+									</div>
+
+									<div class="card__quantity">
+										<button class="card__minus-btn" type="button" name="button">
+											<span class="sr-only">убрать единицу товара</span>
+										</button>
+										<label>
+											<span class="sr-only">Поле ввода количества товара</span>
+											<input class="card__quantity-input" type="text" name="name" value="1" />
+										</label>
+										<button class="card__plus-btn" type="button" name="button">
+											<span class="sr-only">добавить единицу товара</span>
+										</button>
+									</div>
+									<button class="basket-btn" type="button">
+										<span class="sr-only">добавить товар в корзину</span>
+										<svg class="basket-btn__img">
+											<use xlink:href="images/svg.svg#cart-icon"></use>
+										</svg>
 									</button>
 								</div>
-								<button class="basket-btn" type="button">
-									<span class="sr-only">добавить товар в корзину</span>
-									<svg class="basket-btn__img">
-										<use xlink:href="images/svg.svg#cart-icon"></use>
-									</svg>
-								</button>
 							</div>
 						</article>
+
 					</div>
+
 				</div>
+
 				<button class="btn btn--light" aria-label="показать еще популярные товары">
 					Показать еще
 				</button>

@@ -2,20 +2,38 @@ $(function () {
 
 	const link = $('button[data-basket="true"]'),
         basket = $('.basket'),
-		overlay = $('.overlay'),
-    fixedBody = $('body'),		
-		closeBasket = $('button[data-close="true"]');
+        overlay = $('.overlay'),
+        fixedBody = $('body'),		
+        closeBasket = $('button[data-close="true"]');
 
     const openMenu= $('button[data-menu="open"]'),
           sideMenu=$('.side'),
           closeMenu=$('button[data-menu="close"]');
 
+    const openFilter= $('.shop-content__filter-btn'),
+          filterMenu=$('.filter-side'),
+          closeFilter=$('button[data-filter="side"]');
+
+          openFilter.on('click', function () {
+            overlay.show();
+            filterMenu.toggleClass('active');
+            fixedBody.toggleClass('active');
+        });
+
+        closeFilter.on('click', function () {
+          overlay.hide();
+          filterMenu.toggleClass('active');
+          fixedBody.toggleClass('active');
+        });
+
           openMenu.on('click', function () {
+            overlay.show();
             sideMenu.toggleClass('active');
             fixedBody.toggleClass('active');
         });
 
           closeMenu.on('click', function () {
+            overlay.hide();
             sideMenu.toggleClass('active');
             fixedBody.toggleClass('active');
         });
@@ -33,11 +51,11 @@ $(function () {
       fixedBody.toggleClass('active');
 	});
 
-	overlay.on('click',function () {
-		overlay.hide();
-		basket.toggleClass('active');
-    fixedBody.toggleClass('active');
-	});
+	// overlay.on('click',function () {
+	// 	overlay.hide();
+	// 	basket.toggleClass('active');
+  //   fixedBody.toggleClass('active');
+	// });
 
 
     $('.search-btn').on('click', function() {
@@ -52,6 +70,56 @@ $(function () {
         $('button[data-menu="side"] .menu-btn__list').toggleClass('active');
     });
 
+    $('button[data-shop="category"]').on('click', function() {
+      $('.filter-category__list').toggleClass('active');
+      $('button[data-shop="category"] .filter-btn__img').toggleClass('active');
+  });
+
+    $('button[data-shop="offer"]').on('click', function() {
+      $('.filter-offer__form').toggleClass('active');
+      $('button[data-shop="offer"] .filter-btn__img').toggleClass('active');
+  });
+
+    $('button[data-shop="brand"]').on('click', function() {
+      $('.filter-brand__form').toggleClass('active');
+      $('button[data-shop="brand"] .filter-btn__img').toggleClass('active');
+  });
+
+    $('button[data-shop="price"]').on('click', function() {
+      $('.filter-price__form').toggleClass('active');
+      $('button[data-shop="price"] .filter-btn__img').toggleClass('active');
+  });
+
+  $('.shop-content__grid-btn').on('click', function() {
+    $('.shop-content__grid-btn').removeClass('active');
+    $(this).addClass('active');
+});
+
+  $('.button-column').on('click', function() {
+    $('.shop-content__inner').addClass('active');
+    $('.shop .card').addClass('card--column');
+});
+
+  $('.button-grid').on('click', function() {
+    $('.shop-content__inner').removeClass('active');
+    $('.shop .card').removeClass('card--column');
+});
+
+
+  $(".filter-price__input").ionRangeSlider({
+    type: "double",
+     postfix: "₽",
+     onStart: function (data) {
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
+  },
+     onChange: function (data) {
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
+  },
+  });
+
+  $('.shop-content__filter-sort').styler();
 
 
     $('.intro__inner').slick({

@@ -10,6 +10,7 @@
     transform: translateX(-400px);
     z-index: 2;
     overflow: auto;
+    transition: all 0.4s;
 
     &__top {
         display: flex;

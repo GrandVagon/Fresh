@@ -19,3 +19,11 @@ $dark-900: #121212;
 $accent-yellow: #ffb800;
 $accent-orange: #ff7a00;
 $accent-red: #cf3e3b;
+
+%checkbox-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}

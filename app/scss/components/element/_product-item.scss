@@ -5,10 +5,19 @@
 
     &__slider {
         max-width: 630px;
+        max-height: 558px;
         border: 1px solid #C1C1C1;
         box-sizing: border-box;
         border-radius: 4px;
         margin-right: 31px;
+        cursor: pointer;
+
+    }
+
+    &__slide-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     & .slick-prev,
@@ -23,7 +32,7 @@
         background-color: transparent;
         border-radius: 6px;
         cursor: pointer;
-        z-index: 2;
+        z-index: 1;
         transition: all 0.4s;
 
         &:hover {

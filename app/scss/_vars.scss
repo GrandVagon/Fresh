@@ -27,3 +27,11 @@ $accent-red: #cf3e3b;
     overflow: hidden;
     clip: rect(0 0 0 0);
 }
+
+%radio-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}

@@ -27,6 +27,10 @@
 
     }
 
+    &--gray {
+        background-image: url('../../images/icons/close-light.svg');
+    }
+
     &:hover {
         background-color: rgba(193, 193, 193, 0.3);
         border-radius: 3px;

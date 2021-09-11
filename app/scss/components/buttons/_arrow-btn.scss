@@ -6,10 +6,6 @@
     border-radius: 6px;
     transition: all 0.4s;
 
-    &--light {
-        border: 1px solid transparent;
-    }
-
     &__wrapper {
         position: absolute;
         top: 0;
@@ -17,6 +13,7 @@
         display: flex;
         justify-content: space-between;
         width: 150px;
+
     }
 
     &__icon {
@@ -24,6 +21,12 @@
         height: 32px;
         fill: $dark-500;
     }
+
+    &--light {
+        border: 1px solid transparent;
+
+    }
+
 
     &:hover {
         background-color: $secondary-200;
@@ -52,5 +55,4 @@
             fill: $secondary;
         }
     }
-
 }

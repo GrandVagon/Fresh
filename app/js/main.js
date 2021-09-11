@@ -174,12 +174,12 @@ $(function () {
         ]
     });
 
+    const productSlider = $('.product-item__slider');
 
-    $('.product-item__slider').slick({
+    productSlider.slick({
       prevArrow: '<button type="button" class="slick-prev"><img src="./images/icons/arrows-left.svg" alt="arrow-left"></button>',
       nextArrow: '<button type="button" class="slick-next"><img src="./images/icons/arrows-right.svg" alt="arrow-right"></button>',
       dots: false,
-
     });
 
     const bottomSlider = $('.product-bottom__slider');
@@ -188,8 +188,6 @@ $(function () {
       dots: false,
       arrows: false,
       centerPadding: '40px',
-      prevArrow: '<button type="button" class="slick-prev"><img src="./images/icons/arrows-left.svg" alt="arrow-left"></button>',
-      nextArrow: '<button type="button" class="slick-next"><img src="./images/icons/arrows-right.svg" alt="arrow-right"></button>',
       slidesToShow: 4,
       slidesToScroll: 2,
       // responsive: [
@@ -216,6 +214,38 @@ $(function () {
 
   $('#product-bottom-next').on('click', function() {
     bottomSlider.slick('slickNext');
+  });
+ 
+
+  const modalSlider = $('.modal-slider__box');
+
+  modalSlider.slick({
+    dots: true,
+    arrows: false,
+    // responsive: [
+    //   {
+    //     breakpoint: 992,
+    //     settings: {
+    //       slidesToShow: 4,
+    //       slidesToScroll: 3,
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 576,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 2,
+    //     }
+    //   },
+    // ]
+});
+
+  $('#modal-slider-prev').on('click', function() {
+    modaltSlider.slick('slickPrev');
+  });
+
+  $('#modal-slider-next').on('click', function() {
+    modalSlider.slick('slickNext');
   });
  
 
@@ -272,8 +302,20 @@ $(function () {
         $input.val(value);
     });
 
+    
+    const openSlider = $('.product-item__slide'),
+          goodsSlider=$('.modal-slider'),
+          closeSlider = $('button[data-slider="close"]');
 
+          openSlider.on('click', function (e) {
+          goodsSlider.toggleClass('active');
+          fixedBody.toggleClass('active');
+        });
 
+          closeSlider.on('click', function () {
+          goodsSlider.toggleClass('active');
+          fixedBody.toggleClass('active');
+        });
 
 
     var containerEl1 = document.querySelector('[data-ref="container-1"]');

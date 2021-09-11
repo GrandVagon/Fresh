@@ -19,6 +19,44 @@
 </head>
 
 <body>
+
+	<div class="modal-slider">
+		<div class="modal-slider__wrapper">
+			<button class="modal-slider__btn close-btn close-btn--gray" type="button" data-slider="close"></button>
+
+			<ul class="modal-slider__box">
+				<li class="modal-slider__item">
+					<img class="modal-slider__img" src="images/slides/dragonfruit-750.jpg"
+						alt="Питахайя красная с белой мякотью" width="750">
+				</li>
+				<li class="modal-slider__item">
+					<img class="modal-slider__img" src="images/slides/dragonfruit-750.jpg"
+						alt="Питахайя красная с белой мякотью" width="750">
+				</li>
+				<li class="modal-slider__item">
+					<img class="modal-slider__img" src="images/slides/dragonfruit-750.jpg"
+						alt="Питахайя красная с белой мякотью" width="750">
+				</li>
+			</ul>
+
+			<div class="arrow-btn__wrapper">
+				<button class="arrow-btn arrow-btn--light" id="modal-slider-prev" type="button"
+					aria-label="предыдущий слайд">
+					<svg class="arrow-btn__icon">
+						<use xlink:href="images/svg.svg#arrows-left"></use>
+					</svg>
+				</button>
+
+				<button class="arrow-btn arrow-btn--light" id="modal-slider-next" type="button"
+					aria-label="следующий слайд">
+					<svg class="arrow-btn__icon">
+						<use xlink:href="images/svg.svg#arrows-right"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+	</div>
+
 	<header class="header">
 		<div class="container">
 			<div class="header__top">
@@ -400,11 +438,11 @@
 
 						<div class="product-tabs__content-item" id="tab-3">
 
-							<div class="product-tabs__comments-box">
+							<p class="product-tabs__title">
+								МНЕНИЯ НАШИХ КЛИЕНТОВ
+							</p>
 
-								<h2 class="product-tabs__title title">
-									МНЕНИЯ НАШИХ КЛИЕНТОВ
-								</h2>
+							<div class="product-tabs__comments-box">
 
 								<div class="comments">
 									<div class="comments__top">
@@ -440,13 +478,110 @@
 
 							</div>
 
-							<h2 class="product-tabs__title title">
+							<p class="product-tabs__title">
 								Оставить отзыв
-							</h2>
+							</p>
 
-							<form action="#" class="feedback-form">
+							<form class="your-rating" action="#">
+								<div class="your-rating__inner">
+									<span class="your-rating__text">Ваша оценка *</span>
+
+									<label class="your-rating__label">
+										<span class="sr-only">Поставить оценку</span>
+										<input class="your-rating__input" type="checkbox">
+										<span class="your-rating__checkbox" tabindex="0">
+											<svg class="your-rating__checkbox-img">
+												<use xlink:href="images/svg.svg#star"></use>
+											</svg>
+										</span>
+									</label>
+
+									<label class="your-rating__label">
+										<span class="sr-only">Поставить оценку</span>
+										<input class="your-rating__input" type="checkbox">
+										<span class="your-rating__checkbox" tabindex="0">
+											<svg class="your-rating__checkbox-img">
+												<use xlink:href="images/svg.svg#star"></use>
+											</svg>
+										</span>
+									</label>
+
+									<label class="your-rating__label">
+										<span class="sr-only">Поставить оценку</span>
+										<input class="your-rating__input" type="checkbox">
+										<span class="your-rating__checkbox" tabindex="0">
+											<svg class="your-rating__checkbox-img">
+												<use xlink:href="images/svg.svg#star"></use>
+											</svg>
+										</span>
+									</label>
+
+									<label class="your-rating__label">
+										<span class="sr-only">Поставить оценку</span>
+										<input class="your-rating__input" type="checkbox">
+										<span class="your-rating__checkbox" tabindex="0">
+											<svg class="your-rating__checkbox-img">
+												<use xlink:href="images/svg.svg#star"></use>
+											</svg>
+										</span>
+									</label>
+
+									<label class="your-rating__label">
+										<span class="sr-only">Поставить оценку</span>
+										<input class="your-rating__input" type="checkbox">
+										<span class="your-rating__checkbox" tabindex="0">
+											<svg class="your-rating__checkbox-img">
+												<use xlink:href="images/svg.svg#star"></use>
+											</svg>
+										</span>
+									</label>
+								</div>
+							</form>
+
+							<form class="feedback-form" action="#">
+
+								<div class="feedback-form__inner">
+
+									<label class="feedback-form__label">
+										<span class="sr-only">Напишите ваш отзыв</span>
+										<span class="feedback-form__text">Ваш отзыв *</span>
+										<textarea class="feedback-form__textarea"
+											placeholder="Введите текст отзыва"></textarea>
+									</label>
+
+									<div class="feedback-form__box">
+
+										<label class="feedback-form__name">
+											<span class="sr-only">Напишите ваше имя</span>
+											<span class="feedback-form__text">Имя *</span>
+											<input class="feedback-form__input" type="text"
+												placeholder="Введите ваше имя"></input>
+										</label>
+
+										<label class="feedback-form__email">
+											<span class="sr-only">Напишите ваш адрес электроннй почты</span>
+											<span class="feedback-form__text">Email *</span>
+											<input class="feedback-form__input" type="email"
+												placeholder="youremail@mail.com"></input>
+										</label>
+									</div>
+								</div>
+								<label class="feedback-form__save">
+									<input class="feedback-form__save-input" type="checkbox">
+									<span class="feedback-form__checkbox" tabindex="0"></span>
+									<span class="feedback-form__save-text">
+										Сохранить моё имя, email и адрес сайта в этом браузере для последующих моих
+										комментариев.
+									</span>
+								</label>
+
+								<button class="btn" type="submit">Оставить отзыв</button>
+
+
 
 							</form>
+
+
 						</div>
 					</div>
 
@@ -1333,6 +1468,7 @@
 
 
 	</div>
+
 
 	<script src="js/main.min.js"></script>
 </body>

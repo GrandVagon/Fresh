@@ -1,5 +1,4 @@
 .basket-btn {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,6 +28,23 @@
         box-shadow: 0px 0px 0px 4px #e0edcf;
     }
 
+    &--product {
+        width: auto;
+        height: auto;
+        margin-right: auto;
+        margin-left: 18px;
+        padding: 14px 12px;
+        color: $primary;
+        text-transform: uppercase;
+
+        .basket-btn {
+            &__img {
+                display: block;
+                margin-right: 13px;
+            }
+        }
+    }
+
     &--light {
         width: 50px;
         height: 50px;
@@ -54,6 +70,7 @@
         &:focus {
             box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.5);
         }
+
 
         @media (max-width: 768px) {
             width: 40px;

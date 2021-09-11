@@ -51,6 +51,15 @@ $(function () {
       fixedBody.toggleClass('active');
 	});
 
+  $('.product-tabs__link').on('click', function(e) {
+      e.preventDefault();
+      $('.product-tabs__link').removeClass('active');
+      $(this).addClass('active');
+
+      $('.product-tabs__content-item').removeClass('active');
+      $($(this).attr('href')).addClass('active');
+  });
+   
 	// overlay.on('click',function () {
 	// 	overlay.hide();
 	// 	basket.toggleClass('active');
@@ -166,11 +175,69 @@ $(function () {
     });
 
 
+    $('.product-item__slider').slick({
+      prevArrow: '<button type="button" class="slick-prev"><img src="./images/icons/arrows-left.svg" alt="arrow-left"></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="./images/icons/arrows-right.svg" alt="arrow-right"></button>',
+      dots: false,
+
+    });
+
+    const bottomSlider = $('.product-bottom__slider');
+
+    bottomSlider.slick({
+      dots: false,
+      arrows: false,
+      centerPadding: '40px',
+      prevArrow: '<button type="button" class="slick-prev"><img src="./images/icons/arrows-left.svg" alt="arrow-left"></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="./images/icons/arrows-right.svg" alt="arrow-right"></button>',
+      slidesToShow: 4,
+      slidesToScroll: 2,
+      // responsive: [
+      //   {
+      //     breakpoint: 992,
+      //     settings: {
+      //       slidesToShow: 4,
+      //       slidesToScroll: 3,
+      //     }
+      //   },
+      //   {
+      //     breakpoint: 576,
+      //     settings: {
+      //       slidesToShow: 2,
+      //       slidesToScroll: 2,
+      //     }
+      //   },
+      // ]
+  });
+
+  $('#product-bottom-prev').on('click', function() {
+    bottomSlider.slick('slickPrev');
+  });
+
+  $('#product-bottom-next').on('click', function() {
+    bottomSlider.slick('slickNext');
+  });
+ 
+
     $('.star__icon').rateYo({
         starWidth: "16px",
         normalFill: "#c1c1c1",
         ratedFill: "#FFB800",
         numStars: 1
+      });
+
+    $('.product-item__star-icon').rateYo({
+        starWidth: "16px",
+        normalFill: "#c1c1c1",
+        ratedFill: "#FFB800",
+        numStars: 5
+      });
+
+    $('.comments__star').rateYo({
+        starWidth: "16px",
+        normalFill: "#c1c1c1",
+        ratedFill: "#FFB800",
+        numStars: 5
       });
 
 
@@ -221,5 +288,5 @@ $(function () {
     var mixer1 = mixitup(containerEl1, config );
     var mixer2 = mixitup(containerEl2, config );
 
-
 });
+

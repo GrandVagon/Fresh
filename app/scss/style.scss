@@ -13,6 +13,8 @@
 @import 'components/section/footer';
 @import 'components/section/shop';
 @import 'components/section/shop-content';
+@import 'components/section/product-bottom';
+@import 'components/section/product-tabs';
 
 @import 'components/element/card';
 @import 'components/element/basket';
@@ -20,6 +22,8 @@
 @import 'components/element/filter-side';
 @import 'components/element/contacts';
 @import 'components/element/star';
+@import 'components/element/product-item';
+@import 'components/element/comments';
 
 @import 'components/interactive/search';
 @import 'components/interactive/product-filter';
@@ -42,3 +46,4 @@
 @import 'components/buttons/basket-btn';
 @import 'components/buttons/close-btn';
 @import 'components/buttons/filter-btn';
+@import 'components/buttons/arrow-btn';
